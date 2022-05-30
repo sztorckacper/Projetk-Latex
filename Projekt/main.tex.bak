@@ -1,0 +1,91 @@
+\documentclass{book}
+
+\usepackage{main}		%dołączenie pliku main.sty
+\usepackage{subfiles}	%pakiet do łączenia plików
+\usepackage{graphicx}	%pakiet do wstawiania obrazów
+\usepackage{float}		%pakiet m.in. możliwości lepszego formatowania obrazów
+\graphicspath{ {./dup/} }
+\usepackage{wrapfig}
+\usepackage[export]{adjustbox}
+\usepackage{multicol}
+\restylefloat{figure}
+\usepackage{subfigure}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{tcolorbox}
+\usepackage{blindtext}
+\usepackage{main}
+\usepackage{hyperref}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathdots}
+\usepackage[rightcaption]{sidecap}
+\usepackage{gettitlestring}
+\usepackage{subfiles}
+\usepackage{caption}
+\renewcommand\theContinuedFloat{(\alph{ContinuedFloat})}
+%chapter 7
+\usepackage{yhmath}
+%chapter 10
+\usepackage{booktabs}
+\usepackage[ruled,vlined]{algorithm2e}
+%chapter 17
+\usepackage{tikz}
+\usepackage{graphics}
+\usepackage{ragged2e}
+\usepackage{blkarray}
+%chapter 19
+\usepackage{boldline,makecell}
+\usepackage{chngcntr}
+\newtheorem{theorem}{\textbf{THEOREM}}
+\numberwithin{theorem}{chapter}
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{lemma}{\textbf{LEMMA}}
+\numberwithin{lemma}{chapter}
+\newtheorem{exeforreader}{\textbf{EXERCISE FOR THE READER}}
+\numberwithin{exeforreader}{chapter}
+\newtheorem{exercises}{\textbf{EXERCISES}}
+\numberwithin{exercises}{chapter}
+\newtheorem{program}{\textbf{PROGRAM}}
+\numberwithin{program}{chapter}
+\theoremstyle{plain}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{exm}{\textbf{Example}}
+\numberwithin{exm}{chapter}
+%\newtheorem{algorithm}{\textbf{Algorithm}}
+%\numberwithin{algorithm}{chapter%
+%chapter 20
+\usepackage{latexsym}
+\usepackage{array}
+
+\theoremstyle{remark}
+\newtheorem{remark}{\texttt{Remark}}[chapter]
+
+\theoremstyle{summary}
+\newtheorem*{smr}{\textbf{Summary}}
+
+\theoremstyle{overview}
+\newtheorem*{overview}{\textbf{Overview}}
+
+\newtheorem{problem}{}[chapter]
+
+\newenvironment{example}    % this is the environment name for the input
+  {\renewcommand{\qedsymbol}{$\blacksquare$}%
+   \pushQED{\qed}\begin{exm}}
+  {\popQED\end{exm}}
+
+\newenvironment{summary}    % this is the environment name for the input
+  {\renewcommand{\qedsymbol}{$\blacksquare$}%
+   \pushQED{\qed}\begin{smr}}
+  {\popQED\end{smr}}
+
+\UseRawInputEncoding
+\begin{document}
+
+
+\subfile{ch10/ch10}
+\subfile{ch11/ch11}
+
+\end{document} 

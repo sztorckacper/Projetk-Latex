@@ -1,0 +1,870 @@
+\documentclass[../main.tex]{subfiles}
+\usepackage{graphicx}
+\usepackage{sidecap}
+\usepackage{tasks}
+\usepackage{multicol}
+\usepackage{caption}
+
+\begin{document}
+
+\chapter{dd}
+\chapter{dd}
+\chapter{dd}
+\chapter{dd}
+\chapter{dd}
+\chapter{dd}
+\chapter{dd}
+\chapter{Introduction to Differential Equations}
+
+\section{WHAT ARE DIFFERENTIAL EQUATIONS? }
+Many natural phenomena are represented or modeled by functions. Such functions may depend on one or several independent variables. Choices for the independent variables are endless, but the most common ones are time and space (location) variables. Often, the explicit function is not known but rather we only know (from theory, experiments, or history) certain relations among the various rates of change (derivatives) of the function with respect to some of its independent variables. Any equation involving an unknown function along with some or all of its derivatives is called a \textbf{differential equation (DE)}. Differential equations break down into two major kinds, \textbf{ordinary differential equations (ODEs)} and \textbf{partial differential equations (PDEs)}. ODEs involve an unknown function of a single variable only, while PDEs involve an unknown function of several variables. Thus, technically an ODE falls under the umbrella of just being a special type of a PDE but the theories for these types of equations are customarily split into two different major mathematical subject areas. The derivatives of a function of several variables are called partial derivatives. We will study PDEs in Part III of this book and in this part we will focus on ODEs.
+\\
+
+The \textbf{order} of an ODE is the order of the highest derivative of the unknown function that appears in the equation. A solution of an ODE is any function for which, when it (and its derivatives) are substituted for the unknown function (and the corresponding derivatives) in the ODE, the resulting equation will be an identity (i.e., always true). Our next example gives some solutions of certain ODEs. We do not assume the reader has studied differential equations, so at this point the reader should not worry about how the solutions in these examples were obtained.
+\\
+\\
+\textbf{EXAMPLE 8.1:} For each ODE that is given, determine its order and check the given function(s) is a solution. In each of the ODEs the unknown function is written as " $y$ " and we understand " $x$ " to be the independent variable. Thus, " $y "$ really means " $y(x) "$.\\
+(a) $y^{\prime}=2 x ; y=x^{2}+C$ (here $C$ is an arbitrary constant)\\
+(b) $y^{\prime}=2 x y+1 ; y=e^{x^{2}}\left(\int_{0}^{x} e^{-t^{2}} d t\right)+e^{x^{2}}$\\
+(c) $y^{\prime \prime}+2 y^{\prime}-3 y=0 ; y_{1}=e^{-3 x}, y_{2}=e^{x}$\\
+(d) $y^{\prime \prime \prime \prime}+4 y^{\prime \prime \prime}+3 y=x ; y_{1}=x / 3 ; y_{2}=e^{-x}+x / 3$
+\\
+\\
+SOLUTION: The orders of each of these ODEs are (in order) $1,1,2$, and $4 .$ Checking that the functions given are actually solutions just requires some differentiation. We do only (b) (since it's a bit different) and the first function of (c), and leave the rest to the reader. Let's begin with checking that $y_{1}=e^{-3 x}$ solves the ODE in (c). Since $y_{1}^{\prime}=-3 e^{-3 x}$ and $y_{1}^{\prime \prime}=9 e^{-3 x}$, we have $y^{\prime \prime}+2 y^{\prime}$ $-3 y=9 e^{-3 x}+2\left(-3 e^{-3 x}\right)-3 e^{-3 x}=0$, as required.
+\\
+
+The check in part (b) will require the fundamental theorem of calculus (for differentiating functions defined by integrals). We recall this theorem here for convenience and future reference. It is summarized by the formula given below in which $f(t)$ is any continuous function:
+\begin{equation}
+\frac{d}{d x}\left(\int_{a}^{x} f(t) d t\right)=f(x)
+\end{equation}
+(This is really just a precise statement of the fact that differentiation and integration are inverse processes.) Now using (1) together with the product rule, we obtain:
+$$
+\begin{aligned}
+y^{\prime}=\left(e^{x^{2}}\left(\int_{0}^{x} e^{-t^{2}} d t\right)+e^{x^{2}}\right)^{\prime} &=e^{x^{2}}(2 x)\left(\int_{0}^{x} e^{-t^{2}} d t\right)+e^{x^{2}}\left(\int_{0}^{x} e^{-t^{2}} d t\right)^{\prime}+e^{x^{2}}(2 x) \\
+&=2 x e^{x^{2}}\left(\int_{0}^{x} e^{-t^{2}} d t\right)+e^{x^{2}} e^{-x^{2}}+2 x e^{x^{2}} \\
+&=2 x\left(e^{x^{2}}\left(\int_{0}^{-t^{2}} d t\right)+e^{x^{2}}\right)+1 \\
+&=2 x y+1 .
+\end{aligned}
+$$
+As demonstrated by part (a) in the above example, in general, an ODE will have infinitely many solutions. The collection of all solutions of a certain ODE of order $n$ (called the \textbf{general solution}) will involve $n$ arbitrary constants. So to specify one such solution, we will need $n$ \textbf{auxiliary conditions} (one for each order derivative) for the unknown function. If the independent variable is time, in many natural problems the auxiliary conditions are given at time $t=t_{0}=0$ (initially) and in this case are called \textbf{initial conditions (ICs)}. A problem that gives an ODE (of order $n$ ) along with a corresponding set of (n) ICs is called an \textbf{initial value problem (IVP)}. This terminology still applies even when the independent variable is different from time and when $t_{0} \neq 0$.
+\\
+\\
+\textbf{EXAMPLE 8.2:} Use the information in the last example to find a solution for each of the following IVPs:
+\begin{tasks}(2)
+\task 
+$\left\{\begin{array}{l}
+(D E) y^{\prime}=-\cos (x) \\
+(I C) y(0)=-3
+\end{array}\right.$
+\task
+$\left\{\begin{array}{l}
+(D E) y^{\prime \prime}+2 y^{\prime}-3 y=0 \\
+(I C)^{\prime} s y(0)=5, y^{\prime}(0)=1
+\end{array}\right.$
+\end{tasks}
+SOLUTION: Part (a): The form of the DE is a familiar one from calculus: $y^{\prime}=$ $f(x)$. The general solution is the indefinite integral $y=\int f(x) d x$, so here $y=\int-\cos (x) d x=-\sin (x)+C$. Substituting $x=0$ into both sides gives (using the IC) $-3=y(0)=-\sin (0)+C=0+C=C$, so $C=-3$, and $y=-\sin (x)-3$.
+\\
+\\
+Part (b): Example 8.l gave us two solutions of this DE. Using the rules of differentiation, we observe that if we multiply either of these solutions (or any solution of the DE) by a constant it will still solve the DE (reason: Constants can be pulled out of differentiations). Also, if we add two such solutions (or any two solutions of this DE) the sum will also solve the DE (reason: Derivatives of sums are sums of the derivatives). These important facts are not true for all DEs; we will later discuss general circumstances under which they will be true. From what we have stated, it follows that for any constants $C_{1}, C_{2}$, the function $y=C_{1} y_{1}+C_{2} y_{2}=C_{1} e^{-3 x}+C_{2} e^{x}$ will solve the DE (this actually turns out to be the general solution). If we can determine choices for $C_{1}, C_{2}$ that will make this function satisfy the ICs, then we can proceed. For this function, the ICs give: $5=$ $y(0)=C_{1}+C_{2}$, and $1=y^{\prime}(0)=-3 C_{1}+C_{2}$. Solving these two equations gives $C_{1}=1, C_{2}=4$ and so a solution of the IVP is $y=e^{-3 x}+4 e^{x}$.
+\\
+
+From calculus we know that the solution in part (a) is \textbf{unique} (meaning: There is only one), and for both problems we saw the \textbf{existence} of a solution (meaning: There is at least one). It turns out that the solution in part (b) is also unique. Not all IVPs have such a nice existence and uniqueness phenomenon; we will give some theorems about this later.
+\\
+
+The simplest type of ODE is like that given in part (a) of the last example where it is really just a calculus problem of finding an indefinite integral. In calculus courses, we learn that although it is possible to differentiate just about any function in sight, finding indefinite integrals is almost always impossible. Most of the integrals encountered in calculus courses are tailor-made to be evaluated using one of the techniques of integration. Yet, by the fundamental theorem of calculus, any continuous function has a definite integral (whose derivative is given by (1)). The hard fact is that in real life, chances are that the function we need to integrate will be impossible to do explicitly. By extension, more complicated differential equations are also extremely unlikely to be solvable explicitly. Much of the material in traditional courses in DEs is focused on developing methods for solving very limited classes of DEs explicitly. Thus in practice, \underline{most DEs that come up cannot be solved explicitly and numerical methods are the only way to go.}
+\\
+
+DEs arise in problems from practically all scientific disciplines from physics and engineering to biology and pharmacology. For each such model, certain information is known from which the DE can be formulated along with needed auxiliary conditions. In biology, for example, information might be used to set up a DE modeling an outbreak of a disease. We know the history of how the disease is spread and we will be very interested in knowing what will happen in the future. The unknown function would be the number of infected individuals, and the independent variable would be time. Biologists (and many others) would be interested in predicting the number of infected individuals in future times as well. Perhaps there are some preventative measures or vaccines that could be used. The effect of such items could further be built into the DE to help decide on the best course(s) of action to keep the disease from becoming an epidemic or preferably to wipe it out. Even people studying finance have developed a type of DE (called a stochastic differential equation) that can be used to model prices of stock and futures markets. This subject received a lot of attention recently, and has garnered generous funding from Wall Street tycoons who are always looking for creative new ways to turn profits. Of course, in any of the applied fields, an explicit solution is never really required. We would just like to know (within some specified tolerance for error) what the value of the unknown function will be at some values of the independent variables. For the remainder of this chapter, we will focus on (single) first-order ODEs. In the next two chapters we will extend many of our techniques to systems of several ODEs involving several unknown functions and to higher-order ODEs.
+ 
+ 
+\section{SOME BASIC DIFFERENTIAL EQUATION MODELS AND EULER'S METHOD}
+\noindent
+Let us begin with a simple example where pure mathematics alone would be quite awkward and inadequate, but MATLAB will easily come to the rescue.
+\\
+\\
+\textbf{EXAMPLE 8.3:} Graph the solution of the IVP: $\left\{\begin{array}{l}(D E) y^{\prime}=\sin \left(x^{2}\right) \\ (I C) y(0)=1\end{array}\right.$ for $0 \leq x \leq 5$.
+\\
+\\
+SOLUTION: Invoking the fundamental theorem of calculus, we obtain
+$$
+y^{\prime}=\sin \left(x^{2}\right) \Rightarrow y(x)=\int_{0}^{x} \sin \left(t^{2}\right) d t+C .
+$$
+Now substituting x=0 into the latter equation, the IC gives us that
+$$
+1=y(0)=\int_{0}^{0} \sin \left(t^{2}\right) d t+C=0+C \Rightarrow C=1.
+$$
+so we now have $y(x)=\int_{0}^{x} \sin \left(t^{2}\right) d t+1$. Since we cannot evaluate the indefinite integral explicitly (in fact it is impossible to do so no matter how good we are at integration by parts, substitution, etc.), pure mathematics stops here. We can now let MATLAB take over this solution. Using the numerical integrator quad (described in Chapter 3 ), we use a for loop to create $x$ - and $y$-values of the function $y(x)$ and then plot them to obtain the desired graph. We first need to store the function to be integrated (either as an M-file or an inline function). Here is how it can all be done:
+\begin{lstlisting}[frame=none,numbers=none]
+>> f=inline('sin(x.^2)');
+>> x=0:.01:5; %This will give a very decent, resolution
+>> size(x ) %Need to know many components x has to create y of same 
+>> % lencfth. 
+-> 1 501
+
+>> for i=1:501
+    y(i)=1+quad(f,0,x(i));
+end
+>> plot(x,y ) 
+\end{lstlisting}
+NOTE: If you created $f$ as an M-file rather than an inline function, the syntax for \texttt{quad} would have to be \texttt{quad (' $\left.f^{\prime}, 0, x(i)\right)$} or \texttt{quad $(@f,0,x(i))$}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{img_12}
+\caption{A plot of the solution of the IVP of Example 8.3. There exists no explicit 
+mathematical formula for this function in terms of the standard functions of calculus.}
+\end{figure}
+
+Suppose that we wanted the numerical value of the solution when $x=3$. We want to caution the reader that at this point we cannot just enter $y(3)$ in our MATLAB session to get the answer. Recall that $y$ is stored as a vector so $y$ (3) would just be its third component, i.e., the $y$-coordinate when $x=0+2(.01)=$ $0.02$. This is definitely not what we want $(y$ when $x=3)$. Let us reiterate:
+\\
+\\
+CAUTION: In the above problem, the mathematical notation $y(3)$ denotes the $y$ coordinate of the function when the $x$-coordinate equals 3 , in MATLAB notation, $y(3)$ is the third component of the vector of $y$-values constructed (which occurs at $x=0.02$ ). Thus, depending on the context, the notation $y(3)$ could mean two different things. This problem will come up repeatedly and the reader must be made aware of it early on to avoid confusion. Remember the adage: Everything (numerical) in MATLAB is a matrix.
+\\
+\\
+EXERCISE FOR THE READER 8.1: Relating to the example above, fill in the question mark: $y(3)$ (mathematical notation) $=y$ (?) (MATLAB notation). Then find this numerical value to 4 decimals.
+\\
+
+We now introduce our first set of differential equations on which we will begin a systematic study. They will model population growth. Here, the independent variable will be $t$ (time)-not $x$. We begin with the most basic model. We will let
+$$
+P(t)=\text { the number of individuals in a certain population at time } t \text {, }
+$$
+where the "individuals" could be humans, sharks, bacteria, etc. In the basic model, we assume that there is a constant \textbf{birth rate} $=\beta(\equiv$ the number of individuals born into the population per unit time per living individual) and constant \textbf{death rate} $=\delta(\equiv$ the number of individuals who die per unit time per living individual). With no other effect that would change the population (e.g., no immigrations, or other such phenomena), this gives the following differential equation for $P(t)$ :
+\begin{equation}
+P^{\prime}(t)=(\beta-\delta) P(t)=r P(t) \text { or } P^{\prime}=r P \text {, }
+\end{equation}
+\begin{wrapfigure}[20]{l}{0.25\textwidth}
+\includegraphics[width=0.25\textwidth]{img_13}
+\caption{Thomas Malthus (1766-1834), English economist.}
+\end{wrapfigure}
+where we have let $r=\beta-\delta$ ( $\equiv$ resultant growth rate). This population model is credited to the political economist Thomas Malthus\footnote{Malthus was the first scientist to realize the power of exponential growth left unchecked. He wrote a seminal work: Essay on the Principle of Population (1798). In it he observed how in nature plants and animals routinely produce more offspring than can survive. and that unless family sizes were regulated, the human race would eventually become too large and poverty and famine would eventually lead to its demise. He used his models to support his claims but some of his recommendations were quite controversial and totalitarian. He proposed, for example, that poor families not be allowed to have more offspring than they can support. His social recommendations aside, Malthus's research was quite important and was even used later on by Darwin in formulating some of his famous theories on evolution.} and is customarily referred to as the Malthus growth model. This DE is easy to solve explicitly. Thinking of a function that is its own derivative, we come up with $e^{y}$. The DE above states that the derivative of a function should equal $r$ times the function. Since $\left(e^{n}\right)^{\prime}=r e^{n}$, we see that $P(t)=e^{r t}$ will solve the DE. Also, we can multiply this solution by any constant and it will still solve the DE (why?). We have just found a collection of solutions to the DE (2) to be $P(t)=\mathrm{C} e^{n}$ (where $C$ is an arbitrary constant). It turns out that there are no other solutions (this will follow from uniqueness theorems that we give later; see also Exercise 8 of this section) and thus this is the general solution. If we substitute $t=0$ into this general solution, we get $P(0)=\mathrm{C} e^{0}=C$, so the constant $C$ turns out to be the initial population ( $\equiv$ the population at time $t=0$). Depending on the value of $r$, we have three different cases for what will happen to such a population. These situations are summarized in Figure 8.3.
+\\
+\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{img_14}
+\caption{The three cases of the basic population model (2): (a) $r>0$ exponential growth, (b) $r=0$ constant population, (c) $r<0$ exponential decay-eventual extinction.}
+\end{figure}
+Malthus growth left unchecked can be extreme beyond imagination. The next example puts this comment into perspective.
+\\
+\\
+\textbf{EXAMPLE 8.4:} Under ideal conditions, a single cell of E. coli bacterium splits into 2 new bacteria every 20 minutes.
+\begin{tasks}(1)
+\task
+Starting with such a single cell, estimate the population of the resulting colony after 1 day ( 24 hours).\\
+\task
+(b) The average mass of an E. coli cell is $10^{-12} \mathrm{~g}$. Compare the mass of the dayold colony to that of the Earth ( $\approx 5.9763 \times 10^{24} \mathrm{~kg}$.)
+\end{tasks}
+SOLUTION: Part (a): If we use hours for the unit of time, we wish to find $P(24)$. After 20 minutes, one E. \textit{coli} cell becomes two, in 20 more minutes, these two become four, and finally after another 20 minutes (one hour), the four have become eight, resulting in the net "birth" of seven new E. coli cells in one hour $(=$ 1 unit of time). So we have a growth rate $\beta=7$. Since the death rate will not be relevant for this short-time, ideal-condition problem, this gives a growth rate of $r=$ 7 and so the DE is $P^{\prime}(t)=7 P(t)$. The general solution is
+$$
+\left.P(t)=P_{0} e^{7 t}=e^{7 t} \text { (since } P_{0}=1\right) \text { so } p(24)=e^{7.24}=9.1511 \times 10^{72} \text { ! }
+$$
+Part (b): Using the data given, this means that the resulting population would be over $10^{33}$ times as massive as our planet! In his 1969 novel, \textit{The Andromeda Strain}, Michael Crichton had made such an interesting observation. Of course, as the population starts to get big the conditions are no longer as ideal. For example, if $\mathrm{E}$. coli has infected a certain human being, this colony will be limited to the size of the host. Also, once it is detected, human antibodies will make conditions not as hospitable, and appropriate antibiotics will make conditions so unfavorable that the whole colony can be wiped out.
+\\
+
+More advanced models of population growth (or decay) will have variable growth rates. One useful such model is the so-called logistical growth model. This model takes into account factors such as limited food supply, cultural sophistication, etc., that tend to keep the population from getting too big. The DE representing this model is as follows:
+\begin{equation}
+P^{\prime}(t)=r P(1-P / k),
+\end{equation}
+Here, $r$ and $k$ are constants. The number $r$ is called the \textbf{natural growth rate} and it is damped by the factor $(1-P / k)$. The number $k$ is called the \textbf{carrying capacity} of the environment. When $P$ is small relative to $k$, the factor $(1-P / k)$ is essentially equal to one so $(3)$ implies that $P^{\prime}(t) \approx r P$ and the growth is like Malthus growth. This logistical growth model (3) was used by Belgian mathematician Pierre Francois Verhulst (1804-1849) to model the population growth in Belgium.\footnote{ In his 1845 paper Recherches mathematiques sur la loi d'accroissement de la population, Verhulst used Belgian census data to predict the parameters for his model, which he termed as logistique. His model predicted the population rather well all the way up into the 1990 s when it began to undershoot the actual figures by only about $7 \%$, and these discrepancies can be attributed more to immigrations which had been unanticipated in Verhulst's era. Shortly we will give a similar model for the U.S. population growth. The model comes from a 1920 paper of two demographers, Raymond Pearl and L. J. Reed, entitled: On the rate of growth of the population of the United States since 1790 and its mathematical representation. The latter researchers, unaware of Verhulst's work, developed a similar model using census data of the U.S. population } We will present an example shortly. The logistical growth model has also been used in many other contexts as well. In particular, it was used in the 1970s to predict U.S. oil production. Since the logistical model can be solved explicitly, we will use it as an example to demonstrate some numerical methods for solving initial value problems.
+\\
+
+The first method we present is due to Leonhard Euler,\footnote{Leonhard Euler (pronounced "Oiler") came into this world during a very exciting time in mathematics. Calculus had recently been invented by Sir Issak Newton and Gottfried W. Leibniz and the frontier was open to apply it to solve many important problems. Euler was bom and educated in Switzerland. He received his first appointment as a professor at the prestigious Saint Petersburg University in Russia at the age of 19 . Euler turned out to be the most prolific mathematician of all time. His published works fill over 100 encyclopedia-sized volumes! He is considered the founder of modern pure and numerical analysis. His remarkable work touched upon every major area of mathematics, and he was able to successfully apply mathematics to numerous areas of science, such as celestial mechanics (e.g., planetary and comet motions), ship building, optics, hydrostatics, and fluid mechanics. His work in these areas led him to many differential equations that, in turn, motivated him to develop many useful methods for dealing with them. He has even done significant work in cartography and was involved in making an extensive atlas of Russia. After about six years in St. Petersburg, Euler got appointed to the Berlin Academy and eventually became its leader. Because of some quarrels with King Frederick, he was never given the official title of "President," and so after 25 years of a distinguished career in Berlin, he decided to return again to St. Petersburg. He continued to flourish there until the day of his death. During his last 17 years of life, Euler had become completely blind, but this was also one of his most productive periods! Euler had a memory that was shockingly precise. He was able to perform huge computations in his head and recite an entire novel even at age 70! At this age he could even recite the first and last sentence on each page of Vergil's Aeneid, which he had memorized. Once he had settled an argument in his head between two students whose answers differed in the fifteenth decimal place. We owe to Euler the notation $f(x)$ for a function (1734), $e$ for the base of natural logs (1727), $i$ for the square root of $-1(1777)$, $\pi$ for pi, $\Sigma$ for summation (1755), and numerous other present-day mathematical notations. Euler was also prolific in other ways such as having had 13 children. He boasted about having made his most piercing mathematical discoveries while holding one of his infants as his other children were playing at his feet.
+} who was the first to take action against the fact that pure mathematical methods alone were not enough to solve some important differential equations that were coming up in real-life applications. \textbf{Euler's method} applies to the following type of first-order initial value problem:
+\\
+\\
+\begin{wrapfigure}[20]{l}{0.25\textwidth}
+\includegraphics[width=0.25\textwidth]{img_15}
+\caption{Leonhard Euler (1707-1783), Swiss mathematician.}
+\end{wrapfigure}
+\begin{equation}
+(I V P)\left\{\begin{array}{l}y^{\prime}(t)=f(t, y(t)) \\ y(a)=y_{0}\end{array}\right.
+(D E)\\
+(I C)
+\end{equation}
+When it is understood that $t$ is the independent variable, the differential equation in (4) is often written more succinctly as $y^{\prime}=f(t, y)$. By extension, we are allowing the initial value problem's initial condition to commence at any time $t=a$, rather than always at $t=0$. The form of the (DE) in (4) is solved for $y^{\prime}$. Although this is not always possible, it is a form to which most of the successful theory of differential equations can be developed. It may seem restrictive in that it seems to apply only to first-order ODEs. We will see later, however, that any higher-order ODE can be transformed into a system of firstorder ODEs. Thus, the methods we will be learning about for numerically solving (4) will actually turn out to be applicable to very general ordinary differential equations (of arbitrary order) and systems of these. In order to introduce the method, we initially will only assume that the function $f(t, y)$ of the (DE) in (4) is a continuous function (in both of its variables). It turns out that this will be sufficient to guarantee the existence of a solution to (4) (at least as long as its graph stays in the region of continuity of $f(t, y)$ ). The condition for uniqueness is a bit more technical. We will come to this later, after we work through some more examples. It will turn out that all of the examples we consider (as well as the great majority that come up in real-life modeling) will satisfy the technical requirements to guarantee existence and uniqueness.
+\\
+
+Euler's method is based on the tangent line approximation (special case of Taylor's theorem):
+\begin{equation}
+y\left(t_{0}+\Delta t\right) \approx y\left(t_{0}\right)+y^{\prime}\left(t_{0}\right) \Delta t
+\end{equation}
+The method requires specifying a step size $=h>0$ (usually a small number), and will construct a sequence of $y$-coordinates $y_{0}, y_{1}, y_{2}, \cdots, y_{N}$ that will approximate the function at the equally spaced (by the step size $h$ ) $t$-coordinates $t_{0}=a, t_{1}=a+h, t_{2}=a+2 h, \cdots, t_{N}=a+N h$. The integer $N$ can be as large as we want, and the t-range will cover however long an interval on which we would like to approximate the function. The goal is to get $y_{n} \approx y\left(t_{n}\right)$ for each $n, 1 \leq n \leq N$. The initial condition (IC) in (4) lets us start off exactly: $y_{0}=y(a)=y\left(t_{0}\right)$. Next, to get $y_{1}$, we use (4), which tells us exactly what $y^{\prime}\left(t_{0}\right)$ is $\left(f\left(t_{0}, y\left(t_{0}\right)\right)=f\left(t_{0}, y_{0}\right)\right)$ and $(5)$ :
+$$
+y\left(t_{1}\right)=y\left(t_{0}+h\right) \approx y\left(t_{0}\right)+y^{\prime}\left(t_{0}\right) h=y_{0}+h f\left(t_{0}, y_{0}\right) \approx y_{1} .
+$$
+We will next get $y_{2}$ from $y_{1}$ in the same fashion as we obtained $y_{1}$ from $y_{0}$. Things are a bit different here, though, since $y_{0}$ is exactly $y\left(t_{0}\right)$, whereas $y_{1}$ is. only an approximation to $y\left(t_{1}\right)$. But since we are assuming that $f(t, y)$ is continuous, it follows that if the step size $h$ is taken small enough, the value of the actual derivative $y^{\prime}\left(t_{1}\right)=f\left(t_{1}, y\left(t_{1}\right)\right.$ ) (from the (DE) in $(4)$ ) will be very close to $f\left(t_{1}, y_{1}\right)$ (since $y_{1}$ will be very close to $\left.y\left(t_{1}\right)\right)$. We use these facts and (4) to obtain $y_{2}$ :
+$$
+y\left(t_{2}\right)=y\left(t_{1}+h\right) \approx y\left(t_{1}\right)+y^{\prime}\left(t_{1}\right) h \approx y_{1}+h f\left(t_{0}, y_{1}\right) \equiv y_{2}
+$$
+The subsequent $y_{n}$ 's are now obtained recursively in the same fashion. The actual solution is now approximated by connecting (interpolating) adjacent ordered pairs $\left(t_{n}, y_{n}\right)$ with line segments. Recall that this is what MATLAB would do anyway if we asked it to plot the vector $y=\left[y_{0}, y_{1}, y_{2}, \cdots, y_{N}\right]$ versus $t=\left[t_{0}, t_{1}, t_{2}, \cdots, t_{N}\right]$. We can summarize Euler's method by these recursion formulas:
+\\
+
+\begin{multicols}{2}
+\begin{tabular}{|l|}
+\hline
+Euler's Method:
+$t_{0}=a, y_{0}=y(a)$ given\\
+$h=$ step size\\
+$t_{n+1}=t+h, \quad y_{n+1}=y_{n}+h f\left(t_{n}, y_{n}\right)$,\\
+$n=1,2,3, \cdots$\\
+\hline
+\end{tabular}
+\captionof{figure}{Illustration of Euler's method for solving the first-order IVP $\left\{\begin{array}{l}y^{\prime}(t)=f(t, y(t)) \\ y(a)=y_{0}\end{array}\right.$ using step size $h$. The approximation is the dotted graph and the actual solution is the solid graph.}
+\columnbreak
+\begin{figure}[H]
+\includegraphics[width=0.4\textwidth]{img_16}
+\end{figure}
+\end{multicols}
+
+As our first example, we will use Euler's method to numerically solve the historical U.S. population logistical model that was described earlier. Since the DE can be solved explicitly in this case, we will be able to compare the exact errors for Euler's method for this problem with different step sizes. Moreover, keeping in mind that the model was done near the beginning of the twentieth century, we will also be able to compare the model's predictions with some actual numbers in the U.S. populations. We will do this example by hand using MATLAB, and afterwards we will write a program that will perform Euler's method.
+\\
+
+\textbf{EXAMPLE 8.5:} In the Verhulst-type population model for the U.S. population (done in 1920), the logistical population growth model was used in the initial value problem
+$$
+\left\{\begin{array}{l}
+P^{\prime}(t)=r P(1-P / k) \\
+P(0)=P_{0}
+\end{array}\right.,
+$$
+using the estimates $r=0.0318$ (growth rate), and $k=200$ million (carrying capacity). It was known that $P(0)=3.9$ million (where we identified $t=0$ years with the year 1790).\\
+(a) Use Euler's method with step size $h=0.1$ in the Verhulst model to estimate the U.S. populations in the years $1850(t=60), 1900(t=110)$, and $1990(t=200)$.\\
+(b) Repeat part (a) with step size $h=0.01$.\\
+(c) The exact solution of the logistical IVP is (from ODE methods; see Exercise
+12):
+$$
+P(t)=\frac{k}{1+\left(k / P_{0}-1\right) e^{-n}}..
+$$
+
+In the same plane, plot the graph of the exact solution $P(t)$ along with the two Euler approximations to it for $0 \leq t \leq 200$ (1790 through 1990$)$.
+\\
+\\
+SOLUTION: For convenience, we express populations in millions. Since in part (c) we will need to plot the Euler approximations, we should create and store the whole vectors of approximations that we obtain from Euler's method in parts (a) and (b). We will need to create a function for the right side of the differential equation:
+\begin{lstlisting}[frame=none,numbers=none]
+>> f=inline('0.0318*P*(l-P/200)') ; 
+\end{lstlisting}
+Part (a): We first create the $t$-vector for the approximations, find out its size, and then use a for loop to create the corresponding $P$-coordinates of the approximations.
+\begin{lstlisting}[frame=none,numbers=none]
+>> t=0:0.1:200; size(t)
+-> 1     2001
+
+>> P(l)=3.9; %Unitialize P 
+>> for n=l:2000 
+P(n+l)=P(n)+0.1*f(P(n)) ; 
+end 
+\end{lstlisting}
+In order to find out the values of this vector corresponding to the times $t=60$ (1850), $t=110(1900)$, and $t=200(1990)$, we need to find the corresponding (MATLAB) indices for the vector $t$. This is not difficult; for example, if we use the recursion formula: $t(n+1)=t(n)+h$, with $t(1)=0$, we see that $t(n)=(n-1) h$ $=0.1(n-1)$. Solving for $n$ gives $n=10 t(n)+1$. So the indices for $t=60,110$, and 200 are 601,1101 , and 2001 respectively. Thus we can get the corresponding population estimates:
+\begin{lstlisting}[frame=none,numbers=none]
+>> P(601), P(1101) , P(2001) 
+->23.5827, 79.1281, 183.9685 
+\end{lstlisting}
+NOTE: The first two estimates compare quite favorably with the actual U.S. populations in the corresponding years: $1850 \rightarrow 23.2$ (million), $1900 \rightarrow 76.0$, $1990 \rightarrow 248.7$. The last estimate falls rather significantly short due to an underestimate of the carrying capacity of the United States. This is certainly excusable, given that in the early twentieth century modern industrial technology (e.g., skyscrapers and agricultural engineering) was not yet on the horizon of peoples' imagination. In this respect, Verhulst's predictions for Belgium (in 1845) were even more impressive.
+\\
+\\
+Part (b): Since in part (c) we will need to compare these approximations with those of part (a), we store both the $t$-vectors and $P$-vectors here as new vectors tb and $\mathrm{Pb}$. The constructions are analogous to those in part (a).
+\begin{lstlisting}[frame=none,numbers=none]
+>> tb=0:.01:200 ; Pb(l)=3.9 ; size(tb)
+-> 1:20001 
+>> for n=1:20000 
+Pb(n+1)=Pb(n)+0.01*f(Pb(n)); 
+end 
+>> Pb(6001), Pb(11001), Pb(20001) 
+->23.6331, 79.3010, 183.9969 
+\end{lstlisting}
+The indices of $\mathrm{Pb}$ correspond to the years 1850,1900 , and 1990 and were obtained as explained in part (a).
+\\
+\\
+Part (c): We store the exact solution as an M-file Pver.m:
+\begin{lstlisting}[frame=none,numbers=none]
+function P=Pver(t) 
+P=200./(1+(200/3.9-1)*exp(-.0318*t)); 
+\end{lstlisting}
+To obtain plots of the exact solution along with the two approximate solutions of parts (a) and (b), we must take care in plotting the two approximations with the correct $t$-vectors (the vectors in a plot must be the same size).
+\\
+
+\begin{multicols}{2}
+\begin{lstlisting}[frame=none,numbers=none]
+>> plot(t,P), hold on, plot(tb,Pb) 
+>> plot(tb,Pver(tb)) 
+>> xlabel('Years after 1790') 
+>> ylabel('Estimated U.S. 
+        population in millions')
+\end{lstlisting}
+\captionof{figure}{Illustration of the maximum absolute value of the eigenvalues of the matrix $I-B^{-1} A$ of Theorem $7.10$ for the SOR method (see Table 7.1) for various values of the relaxation parameter $\omega$. Compare with the corresponding number of iterations needed for convergence (Figure $7.40$ ).}
+\columnbreak
+\begin{figure}[H]
+\includegraphics[width=0.5\textwidth]{img_17}
+\end{figure}
+\end{multicols}
+\noindent
+Since the three graphs are indistinguishable, we give also a plot of the errors of the two Euler approximations. The following plot command will do it all in one line.
+\begin{lstlisting}[frame=none,numbers=none]
+>> hold off, plot(t,abs(Pver(t)-P), tb, abs(Pver(tb)-Pb), 
+>> xlabel('Years after 1790') 
+>> ylabel('Millions') 
+>> title('Error Graphs')
+\end{lstlisting}
+
+\begin{multicols}{2}
+\captionof{figure}{Graphs of the absolute errors in using the Euler method to solve the Verhulst-type U.S. population initial value problem of Example 8.5. The thin curve is with step size $h=0.1$ and the thick low curve is with step size $h=0.01$. Note that the error appears to have decreased 10 -fold as we increased the number of steps by a factor of 10 .
+}
+\columnbreak
+\begin{figure}[H]
+\includegraphics[width=0.5\textwidth]{img_18}
+\end{figure}
+\end{multicols}
+
+We will postpone formal error estimates and some related theory until Section 8.4. It is a simple matter to write a program for the Euler method.
+\\
+\\
+\textbf{PROGRAM 8.1:} An M-file for Euler's method for the IVP:
+$$
+\begin{cases}y^{\prime}=f(t, y) & (D E) \\ y(a) \equiv y_{0} & (I C)\end{cases}.
+$$
+\begin{lstlisting}[numbers=none]
+function [t,y]=eulermeth(f,a,b,yO,hstep) 
+% M-file for applying Euler'3 method to solve the initial value 
+% problem: (DE) y'=f(t,y), (IC) y(a) - y0, on the t-inteival [a,b] 
+% with step size hstep. The output will be a vector of t's and 
+% corresponding y's 
+% input, variables: f, a, b, yO, hstep 
+% output variables: t, y 
+% f is a function of two variables f(t,y) 
+% y(a)=y0 
+t(1)=a; y(1)=y0; 
+nmax=ceil((b-a)/hstep); 
+for n=l:nmax 
+	t(n+1)=t(n)+hstep; 
+	y(n+1)=y(n)+hstep*feval(f,t(n),y(n)); 
+end 
+\end{lstlisting}
+CAUTION: In general the function $f(t, y)$ of the (DE) in the IVP will depend on $t$ and $y$. Since the above program assumes this is the case, whenever it is used to solve an IVP, the function $\mathrm{f}$ must be created as a function of these two variables (in this order) even if it only has one (or none) of these variables appearing in its formula. Also, in order for the final approximation produced in the program, $y($ nmax $+1)$, to correspond to $y(b)$, we choose the step size $h$ so that $(b-a) / h$ is an integer. This is what is usually done in practice. In any case, $t(n m a x+1)$ will always be within $h$ units of $b$.
+\\
+\\
+\textbf{EXAMPLE 8.6:} Using the above program in conjunction with a for loop, get MATLAB to produce a single plot that contains Euler approximations with step size $h=0.1$ of solutions to the logistical growth model IVP:
+$$
+\left\{\begin{array}{l}
+P^{\prime}(t)=r P(1-P / k) \\
+P(0)=P_{0}
+\end{array}, \quad 0 \leq t \leq 1.5\right.
+$$
+using the parameters $r=2.2$ and $k=100$ for each of the following initial populations:
+$$
+P_{0}=10,20,30, \cdots, 190,200 .
+$$
+Discuss the similarities and differences of this family of solutions. 
+\\
+\\
+SOLUTION: Here " $y$ " is replaced by "P" and $f(t, P)=r P(1-P / k)$. We need to explicitly store $f$ as a function of the two variables $t$ and $P$ (even though it does not depend on $t$ ). This can be easily done by creating an M-file. Alternatively, it can be done with an inline function, but we must explicitly declare the two domain variables in order (since the usual construction would scan the formula and take it to be a function of one variable as in the previous example).
+\begin{lstlisting}[frame=none,numbers=none]
+>> f=inlineC2.2*P*(1-P/100 ) ', 'f , 'P')
+-> f=line function: f(t,P) = 2.2*P*(1-P/10
+\end{lstlisting}
+With $f(t, P)$ thus constructed, we can obtain the desired plots very quickly with the following chain of commands:
+\begin{lstlisting}[frame=none,numbers=none]
+>> hold on 
+>> for i=10:10:200 
+[t,yi]=eulermeth(f,0,1.5,i,0.1); 
+plot(t,yi) 
+end
+\end{lstlisting}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{img_19}
+\caption{Graphs of several solutions of the logistic IVP (with different initial conditions); the parameters are $r=2.2$ and $k=100$. The green dashed line intersects solution curves in inflection points.}
+\end{figure}
+
+Notice that solutions with initial populations less than the carrying capacity will increase to it and solutions with initial populations greater than the carrying capacity will decrease to it. This behavior can be predicted from the DE since $P(t)$ $>k$ forces the right side of the $\mathrm{DE}$ (and hence the derivative of $P$ ) to be negative while $P(t)<k$ makes the derivative positive. Also, the net rate of change $\left|P^{\prime}(t)\right|$ disintegrates to zero as $P(t)$ converges to $k$. When $P(t)$ is small, the DE looks more like $P^{\prime}(t) \approx r P$, so we get exponential growth as in the Malthus model. Finally we note that all of the graphs that pass through $y=50(=1 / 2$ of carrying capacity) have an inflection point there.
+\\
+\\
+EXERCISE FOR THE READER 8.2: Use calculus to justify the statement made above regarding inflection points of solutions to the logistic DE. Are there solutions with other inflection points?
+\\
+\\
+The logistic DE has the form $P^{\prime}=f(P)$. To further understand such qualitative properties of the solutions of such DEs, it is useful to look at the graph of the function on the right. For the logistic DE, $f(P)=r P(1-P / k)$ has a graph that is just a downward-opening parabola with $P$-intercepts at $P=0$ and $P=k$, as shown in Figure 8.9. Since, by the chain rule, $P^{\prime \prime}(t)=(d / d t)\left(P^{\prime}\right)=(d / d P)\left(P^{\prime}\right)(d P / d t)$ $=f^{\prime}(P) f(P)=r(1-2 P / k) f(P)$, it is clear that $P^{\prime}$ will increase until P reaches $k / 2$ (if it starts below this value) where its steepest slope will be (i.e., $P^{\prime}$ reaches its maximum at this point $P=k / 2$ where $P^{\prime \prime}=0$ ).
+\\
+\begin{wrapfigure}[30]{l}{0.6\textwidth}
+\includegraphics[width=0.6\textwidth]{img_20}
+\caption{Growth function associated with the logistic equation. There are two equilibria: $P=0$ (unstable) and $P=k$ (stable). Flow directions for $P$ are indicated over the $P$-axis.}
+\end{wrapfigure}
+After this inflection point, $P$ will continue to increase, but at the same time the derivative will continue to decrease. This will continue on forever, $P$ never reaching the carrying capacity $k$. The two roots of $f(P), P=0$, and $P=k$, are clearly constant solutions of the logistic DE. They are called \textbf{equilibrium solutions}. The first $P=0$ equilibrium solution is different from the second in that if an initial value were to be prescribed close to $P=0$, the solution would continue to grow and eventually approach $P=k$ as $t \rightarrow \infty$. Thus solutions which start close to $P=0$ will eventually diverge away from it and such equilibrium solutions are called \textbf{unstable}. If a solution started with initial condition close to $P=k$ (either greater than or less than), then as $t \rightarrow \infty$, any such solution would continue to get closer to $P=k$. Such solutions are called stable. Again this is clear from the graph of $P^{\prime}=f(P)$ in Figure $8.9$, along with the flow directions shown there: If $P^{\prime}=f(P)>0$, flow is to the right (increasing $P$ ); if $P^{\prime}=f(P)<0$, flow is to the left; if $P^{\prime}=f(P)=0$, we are at an equilibrium.
+\\
+
+Other types of growth rates result from different functions $f(P)$. The Gomperz Law is another such example. It is modeled by the following DE:
+$$
+P^{\prime}(t)=-s P \ln (P / k)
+$$
+where $s$ and $k$ are positive constants. This DE has been proved a successful tool in clinical oncology to model tumor growth. The cells within a tumor do not have access to many nutrients and oxygen as do those on the surface, so the growth rate declines as the tumor increases in size up until the carrying capacity $k$ (which will of course vary with the type and location of the tumor as will the constant $s$ ). Eventually the cells inside a tumor stop dividing and die, thus forming the socalled necrotic center. Since $\ln (x)$ is undefined at $x=0$, this model cannot be used for very small values of $P(=$ tumor sizes). For more details, see [EdK-87] and [Mur-03].
+\\
+\\
+EXERCISE FOR THE READER 8.3: (a) Graph the right side of the Gompertz equation $g(P)$, and find all equilibrium solutions (with $P>0$ ). Classify each as stable or unstable.\\
+(b) Use MATLAB to produce graphs of solutions to the Gompertz IVPs:
+$$
+\left\{\begin{array}{l}
+P^{\prime}(t)=-s P \ln (P / k) \\
+P(0)=P_{0}
+\end{array}, 0 \leq t \leq 200\right.
+$$
+With the parameters $s=0.024$ and $k=1$ create a single plot with six graphs corresponding to the initial values $P_{0}=0.1,0.3, \cdots, 1.1$. Are there inflection points? Compare and contrast these graphs.\\
+(c) Use calculus to show that the Gompertz DE can also be written as $P^{\prime}(t)=a e^{-b t} P$, where $a$ and $b$ are constants.
+\\
+\textbf{Suggestion:} For part (c), find explicitly the general solution to the Gompertz DE as follows: Introduce the new variable $y=\ln (P / k)$ to translate the Gompertz DE into a very simple (Malthus) DE for $y$.
+\\
+\\
+\rule{485pt}{2pt}
+\textbf{EXERCISES 8.2} 
+\begin{enumerate}
+\item
+Create graphs of numerical solutions of the following IVPs on the indicated time intervals $a \leq t \leq b$. In each, $y=y(t)$. Also, determine your numerical approximation of $y(b)$ to five decimals.
+\begin{tasks}(1)
+\task
+$
+\left\{\begin{array}{ll}
+(D E) & y^{\prime}=\sqrt{1+t^{5}} \\ (I C) & y(0)=2
+\end{array} \quad 0 \leq t \leq 10\right.
+$
+\task
+$
+\left\{\begin{array}{ll}
+(D E) & y^{\prime}=\exp \left(\cos \left(2^{x}\right)\right) \\
+(I C) & y(0)=0
+\end{array} \quad 0 \leq t \leq 7\right.
+$
+\task
+$
+\left\{\begin{array}{ll}
+(D E) y^{\prime}=\cos \left(e^{x} \cos (x)\right) \\
+(I C) y(0)=0
+\end{array} \quad 0 \leq t \leq 6\right.
+$
+\task
+$
+\left\{\begin{array}{ll}
+(D E) & y^{\prime}=\arctan \left(e^{x}\right) \\
+(I C) & y(2)=-4
+\end{array} \quad 0 \leq t \leq 10\right.
+$
+\end{tasks}
+\item
+In each part below, we assume that $y=y(t)$ has initial condition $y(0)=1$ and satisfies the DE given. Determine $\lim _{t \rightarrow \infty} y(t)$ (i.e., as time goes to infinity, what value, if any, does the solution approach?). Also find all equilibrium solutions of the DE and classify each as stable or unstable.
+\begin{tasks}(1)
+\task
+$
+y^{\prime}=y(y+1)
+$
+\task
+$
+y^{\prime}=y\left(y^{2}-4\right)
+$
+\task
+$
+y^{\prime}=y^{2}(y+1)(2-y)
+$
+\task
+$
+y^{\prime}=\sin (y)
+$
+\task
+$
+y^{\prime}=\cos (y)
+$
+\task
+$
+y^{\prime}=y \sin ^{2}(y)
+$
+\end{tasks}
+\item
+For each of the DEs in Exercise 2 (parts (a) through (f)) explain when a solution will have an inflection point. What will the $y$-coordinates of these inflection points be?
+\item
+For each of the DEs in Exercise 2 (parts (a) through (f)) use the Euler program in conjunction with a loop to get MATLAB to produce plots of a family of at least 15 solutions of the DE (all in the same plot) that satisfy various initial conditions $y(0)=y_{0}$. Choose the values of the $y_{0}$ 's so that your solutions will start in at least three different intervals determined by the equilibrium solution values. For each DE, specially choose (after some experimentation) appropriate time intervals $0 \leq t \leq b$ as well as appropriate $y$-ranges on the plots (via the axis command) so that the totality of your plots are effectively displayed and accurately depict the main properties of the solutions.
+\item
+A virus culture in a host has an initial population of 10,000 and the carrying capacity of the host is known to be $k=2$ billion. After 5 days the population grew to 24,000 . Assuming logistical growth, determine the natural growth rate $r$.
+\item
+(Fishing Yields) Suppose that for a certain species of fish in a small lake it is determined that the unencumbered annual growth rate is $r=0.8$ and the carrying capacity of the lake is $k=1500$ fish. The owner of the lake would like to allow harvesting of fish in this lake at the rate of $n=$ 200 fish per year. Starting with the logistic equation and taking into account this annual removal, the DE for the fish population becomes:
+$$
+F^{\prime}(t)=r F(1-F / k)-n.
+$$
+(a) What initial fish populations $F(0)$ would support this fishing yield? When the yield is supported, what happens to the fish population as $t \rightarrow \infty$ ?\\
+(b) Get MATLAB to produce a good assortment (of about 15 ) solutions of this to the DE with several different initial conditions and put them together in a single plot. Explain some similarities and differences of your solutions.\\
+(c) What is the limit to the amount $n$ of fish per year which could be harvested from this lake? Explain any problems that might arise if the fishing were to push up to this limit. What happens if the limit is exceeded?
+\item
+(Fishing Yields) Redo Exercise 6 with the parameters $r=0.66$ (slower reproducing fish), $k=$ 20,000 (larger lake) and $n=1200$ (more fishing).
+\item
+Prove that the solutions of the Malthus growth $\mathrm{DE} P^{\prime}=r P$ (where $P=P(t)$ ) that satisfy an initial condition $P(0)=P_{0}$ are unique.
+\\
+\\
+Suggestion: Fix one such solution $P(t)$ and show that the quotient $P(t) / e^{r t}$ is a constant function.
+\item
+Prove that the general solution of the (DE) $Q^{\prime}=r Q+s$ (where $Q=Q(t)$ and $r$ and $s$ are nonzero numbers) is $Q(t)=C e^{r t}-s / r$.
+\\
+\textbf{Suggestion:} Let $P(t)=Q(t)+s / r$. Show that $Q(t)$ solves this DE if and only if $P(t)$ solves the corresponding Malthus growth DE $P^{\prime}=r P$.
+\item
+\textit{(Use of Predators to Keep Parasites at Bay)} On a certain island that had no cats, the mouse population doubled during the 10 -year period from 1960 to 1970 , In 1970 when the mouse population reached 50,000 , the rulers of the island imported several cats who thereafter killed 6000 mice per year.\\
+(a) Letting $t=0$ correspond to 1960 , find an expression for $P(t)=$ the mouse population in the range $0 \leq t \leq 10$.\\
+(b) Find an expression for $P(t)$ for $t$ in the range $t>10$\\
+(c) What was the mouse population in 1980? In 1990?\\
+\textbf{Suggestion:} For part (b), use the result of the preceding exercise.
+\item
+Consider the DE $y^{\prime}=y^{2}-t$. Use MALTAB to produce the plots of 29 solutions of this DE (approximated via the Euler method with $h=0.001$ ) satisfying the ICs $y_{0}=-14,-12, \cdots, 12,14$. In this same plot, include the graph of the parabola $t=y^{2}$. Experiment with different $t$-intervals $0 \leq t \leq b$ as well as different $y$-ranges (via the axis command) until you obtain a plot that gives good evidence of some important behavior of these 29 solutions. Compare and contrast these different solutions. How do they behave as $t \rightarrow \infty$ ?
+\item
+This exercise will show how to explicitly solve the logistical growth model equation (3) using the method of separation of variables.\\
+(a) Rewrite the equation (3): $P^{\prime}(t)(=d P / d t)=r P(1-P / k)$ so that all the "P" expressions are on the left and the " $q$ " expressions are on the right:
+$$
+\frac{d P}{P(M-P)}=rdt,
+$$
+and now integrate both sides and use the initial condition $ P(0)=P_{0}$ to obtain: 
+$$
+P(t)=\frac{k}{1+\left(k / P_{0}-1\right) e^{-r t}}
+$$
+\textbf{Suggestion:} In order to integrate the left side (if you are doing it by hand), rewrite the integrand as $1 / P+1 /(k-P)$.
+\end{enumerate}
+
+\section{MORE ACCURATE METHODS FOR INITIAL VALUE PROBLEMS}
+\noindent
+Euler's method for numerically solving the IVP (4)
+ $$
+\begin{cases}y^{\prime}(t)=f(t, y(t)) & (D E) \\ y(a) \equiv y_{0} & (I C)\end{cases}.
+$$
+was based on the first-order (tangent line) approximation. If the function $f(t, y)$ on the right-hand side of the DE of (4) is sufficiently differentiable, it seems plausible that we can obtain more accurate methods by using higher-order Taylor polynomials (which can be computed from the function $f(t, y)$ using the DE (4)). This is indeed the case and we will say more about this in the next section. Computing higher derivatives can, in general, be expensive and is not always very feasible, but what is surprising is that there are methods which converge much quicker than Euler's method (and as fast as some of these higher-order Taylor methods) which only require evaluations of $f(t, y)$ (and no higher derivatives of it). In the next section, we will analyze more carefully the relative convergence speeds of the methods we introduce here compared with Euler's method (and with each other) as well as give a more detailed explanation of how these methods came about. For now we will simply introduce two such very practical methods (the improved Euler method and the Runge-Kutta method), state their relative accuracies, write codes for them, and then run them alongside each other, as well as with Euler's method, in order to see some firsthand evidence of the improvements that these methods have to offer.
+\\
+
+Just like Euler's method, the two methods we consider require the specification of a step size $h$ and will successively construct a sequence of $y$-coordinates $y_{0}, y_{1}, y_{2}, \cdots, y_{N}$ which will be approximations of the actual $y$-coordinates of the solution\footnote{The relevant existence and uniqueness theorem will be presented in the next section.} of (4) at the equally spaced $t$-coordinates $t_{0}=a, t_{1}=a+h, t_{2}$ $=a+2 h, \cdots, t_{N}=a+N h$. Both of these methods are so-called one-step methods, which means that to get from an approximation $y_{n}$ to the next $y_{n+1}$ we will use only the information $y_{n}, h, t_{n}$ and the function $f(t, y)$. In particular, one-step methods "have no memory" of past approximations (only the current one).
+\\
+\\
+We first introduce the so-called improved Euler method (also known as Heun's method). We shall briefly motivate the method as a natural extension of Euler's method. The precise error analysis will be done in the next section. Note that $t_{n+1}=t_{n}+h$ and by the fundamental theorem of calculus, we can write (using the DE of $(4))$ :
+\begin{equation}
+\begin{aligned}
+y\left(t_{n+1}\right) &=y\left(t_{n}\right)+\int_{t_{n}}^{t_{n+1}} y^{\prime}(t) d t \\
+&=y\left(t_{n}\right)+\int_{t_{n}}^{t_{n+1}} f(t, y(t)) d t \approx y_{n}+\int_{t_{n}}^{n+1} f(t, y(t)) d t
+\end{aligned}
+\end{equation}
+In order to obtain $y_{n+1}$, our approximation of this value, we need to estimate the integral appearing in this formula. Euler's method can be viewed as approximating this last integral by the length of the $t$-interval on which we are integrating $=t_{n+1}-t_{n}=h$ times the approximate value of the integrand (function being integrated) evaluated at the left endpoint: $f\left(t_{n}, y\left(t_{n}\right)\right) \approx f\left(t_{n}, y_{n}\right)$. A more accurate approximation of the integral is obtained if we replace the integrand with something close to the average of the function at the two endpoints-a trapezoidal approximation; see Figure 8.10. To help approximate the value of $y^{\prime}\left(t_{n+1}\right)$ in the improved Euler method, we make implicit use of the Euler method as follows:
+$$
+y^{\prime}\left(t_{n+1}\right)=f\left(t_{n+1}, y\left(t_{n+1}\right)\right) \approx f\left(t_{n+1}, y_{n}+h f\left(t_{n}, y_{n}\right)\right) .
+$$
+Thus the improved Euler method will approximate the integral in (6) by
+$$
+\begin{aligned}
+h \frac{y^{\prime}\left(t_{n}\right)+y^{\prime}\left(t_{n+1}\right)}{2} &=h \frac{f\left(t_{n}, y\left(t_{n}\right)\right)+f\left(t_{n+1}, y\left(t_{n+1}\right)\right)}{2} \\
+& \approx h \frac{f\left(t_{n}, y_{n}\right)+f\left(t_{n+1}, y_{n}+h f\left(t_{n}, y_{n}\right)\right)}{2} .
+\end{aligned}
+$$
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{img_21}
+\caption{A graphical comparison of the philosophy of Euler's method versus the improved Euler method. Euler's method attempts to approximate the integral of $y^{\prime}$ on the indicated interval by the dark gray rectangle; the improved Euler methods attempts to use instead the area of the trapezoid determined by the values of $y^{\prime}$ at the endpoints.}
+\end{figure}
+In summary we have 
+\begin{center}
+\begin{tabular}{|l|}
+\hline
+The Improved Euler Method :\\
+$t_{0}=a, y_{0}=y(a)$ given\\
+$h=$ step size\\
+$t_{n+1}=t+h$,\\
+$y_{n+1}=y_{n}+h \frac{f\left(t_{n}, y_{n}\right)+f\left(t_{n+1}, y_{n}+h f\left(t_{n}, y_{n}\right)\right)}{2}, \quad n=1,2,3, \cdots$\\
+\hline
+\end{tabular}
+\end{center}
+We will defer an example until after we also present the classical Runge-Kutta method. The method can also be viewed as approximating the integral in (6) with a certain weighted average of (this time four) values of the function $f(t, y)$. It is a bit more difficult to understand how this weighted average has come about and so we will not attempt to motivate it here. It can be derived using Taylor's theorem, the approach of which is given in the next section. The Runge-Kutta method, like Newton's method for rootfinding, is classical, yet highly effective and is the basis for many contemporary production-grade ODE solving programs. We present the method in the box below:
+
+\begin{multicols}{3}
+\centering
+\begin{tabular}{|l|}
+\hline
+$
+\begin{aligned}
+&\text { The Runge-Kutta Method: } \\
+&t_{0}=a, y_{0}=y(a) \text { given, } \\
+&h=\text { step size } \\
+&t_{n+1}=t+h \\
+&k_{1}=f\left(t_{n}, y_{n}\right) \\
+&k_{2}=f\left(t_{n}+\frac{1}{2} h, y_{n}+\frac{1}{2} h k_{1}\right) \\
+&k_{3}=f\left(t_{n}+\frac{1}{2} h, y_{n}+\frac{1}{2} h k_{2}\right) \\
+&k_{4}=f\left(t_{n}+h, y_{n}+h k_{3}\right) \\
+&y_{n+1}=y_{n}+\frac{h}{6}\left(k_{1}+2 k_{2}+2 k_{3}+k_{4}\right) \\
+&\quad n=1,2,3, \cdots
+\end{aligned}
+$\\
+\hline
+\end{tabular}
+\columnbreak
+
+\begin{figure}[H]
+\ContinuedFloat*
+\centering
+\includegraphics[width=0.2\textwidth]			{img_22}
+\caption{\label{first}Carle D. T. Runge (1856 -1927), German mathematician.}\footnote{The Runge-Kutta method was first developed by Runge, who was also a physicist, to help him analyze data that came up in his work in spectroscopy. Kutta, who is well known for his work in airfoil theory, extended Runge's method to systems of differential equations (we will give this in the next chapter). Runge originally started off studying literature in college. He eventually switched to mathematics and was greatly influenced by some of his teachers, who included the famous mathematical analyst Karl Weierstrass $(1815-1897)$ and Nobel Prize-winning physicist Max Planck (1858-1947). Runge remained vigorous and prolific throughout his life and published extensively both in mathematics and in physics. During his 70 th birthday party he entertained his grandchildren by doing handstands.
+}
+\end{figure}
+
+\columnbreak
+\begin{figure}[H]
+\ContinuedFloat
+\centering
+\includegraphics[width=0.2\textwidth]{img_23}
+\caption{\label{second}Martin W. Kutta (1867-1944), German mathematician.}
+
+\end{figure}
+\end{multicols}
+In the next example we will compare these two methods with the Euler method. The example will be one where the exact solution can be computed explicitly. The solution gets very large rather quickly, making it easy to compare errors.
+$$
+\left\{\begin{array}{l}
+y^{\prime}(t)=2 t y \\
+y(1)=1
+\end{array} \quad 1 \leq t \leq 3\right.
+$$
+first with step size $h=0.1$ and then with step size $h=0.01$. Compare each of the three plots with that of the exact solution $y(t)=e^{t^{2}-1}$ (see Exercise for the Reader 8.5). In cases where the plots of any of the approximations are too close to compare with that of the exact solution, provide plots of the errors.
+\\
+\\
+SOLUTION: We first create inline functions for both the right side of the differential equation $f(t, y)$ and the exact solution which was provided.
+\begin{lstlisting}[frame=none,numbers=none]
+>> f=inline('2*t*y','t', 'y'); yexact=inline('exp(t.^
+2-l)');
+\end{lstlisting}
+We give the details of the MATLAB commands for part (a) $(h=0.1)$ only; the changes needed for part (b) are small and obvious. We need to create vectors corresponding to each of the approximation methods.
+\begin{lstlisting}[frame=none,numbers=none]
+>> %Euler 
+>> h=0.1; [t,ye]=euler(f,1/3,1,h); 
+>> %we may as well use the M-file from thelast .section 
+>> size(t) %need to know this to construct the latter approximations 
+->1 21 
+>> yie(1)=1; %initialize improved Euler 
+>> for n=1:20 
+yie(n+l)=yie(n) + (h/2)*(f(t(n),yie(n)) + f(t(n+ 1),... 
+yie(n)+h*f(t(n),yie(n)))); 
+end 
+
+>> yrk(1)=1; % initialize Runge-Kutta 
+>> for n=1:20 
+	kl=f(t(n),yrk(n)); 
+	k2=f(t(n)+h/2, yrk(n)+h/2*kl); 
+	k3=f(t(n)+h/2, yrk(n)+h/2*k2); 
+	k4=f(t(n)+h, yrk(n)+h*k3); 
+	yrk(n+1)=yrk(n) + h/6*(k1 + 2*k2 + 2*k3 + k4); 
+end 
+
+>> subplot(2,1,1) %to save space we'll use subplots 
+>> s=l:.01:3; plot(s,yexact (s)), hold on 
+>> plot(t,ye, O',t,yie,'x', t, yrk,'+'), ylabel('y') 
+>> subplot(2,1,2), plot(t,abs(yexact(t)-yrk) ) 
+>> xlabel('t'), ylabeK'y')/ title ('Runge-Kutta Error')
+\end{lstlisting}
+
+This plot is shown of Figure 8.12a. Since the Runge-Kutta plot cannot be distinguished from the exact solution, we create a separate plot (lower plot of Figure $8.12 \mathrm{a}$ ) of just this error:\footnote{We created the legends using the "Data Statistics" menu from the "Tools" menu on the graphics window. This was first done in Chapter $7 .$}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{img_24}
+\caption{Solving the initial value problem of Example 8.7. In the upper plot, the solid blue line is the exact solution. The three approximations, Euler (o o o o), improved Euler $(x \times \times x)$, and Runge-Kutta $(++++)$, all used step size $h=0.1$. The lower plot represents the error for Runge-Kutta approximation to the exact solution since the two are indistinguishable in the first plot.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{img_25}
+\caption{In solving the initial value problem of Example $8.7$ using step size $h=$ $0.01$, only the graph of the Euler approximation $\left(\begin{array}{llll}0 & 0 & 0 & 0\end{array}\right)$ is distinguishable from that of the exact solution (solid graph) (Upper Left). The remaining three plots compare errors. Upper Right: Euler (o o o o) vs. improved Euler $(x \times \times \times x)$; Lower Left: improved Euler vs. Runge-Kutta (+ + + +); and Lower Right: Runge-Kutta. Note the scale of the $y$-axes to see how very much smaller the errors are with the Runge-Kutta method.}
+\end{figure}
+\noindent
+EXERCISE FOR THE READER 8.4: Indicate the changes needed in the creation of the vectors ye, yie, and yrk of the above example. Also, assuming these vectors have been constructed, give MATLAB commands which would produce Figure $8.12 \mathrm{~b}$.
+\\
+\\
+EXERCISE FOR THE READER 8.5: The DE of the previous example is separable and thus can be solved exactly by the method outlined in Exercise 12 of the last section. Use this method to derive the general solution of the DE.
+\\
+
+It is now a simple matter to modify the codes in the last example to produce $M$ file programs. We do this for the Runge-Kutta method:
+\\
+\\
+PROGRAM 8.2: An M-file for the Runge-Kutta method for the IVP:
+$$
+\left\{\begin{array}{l}
+y^{\prime}=f(t, y) \\
+y(a)=y_{0}
+\end{array}\right.
+$$
+\begin{lstlisting}[numbers=none]
+function [t, y]=runkut(f, a,b,y0,hstep ) 
+% input variables: f, a, b, y0, hstep 
+% output variables: t , y 
+% f is a function of two variables f(t,y). The program will
+% apply Runge-Kutta to solve the IVP:  (DE): y'-f(t,y), (IC)
+% y(a)=y0 on the t-interval [a,b] with step size hstep. The output
+% will be a vector of: t's and corresponding y's 
+t(1)=a ; y(1]1)=y0 ; nmax=ceil((b-a)/hstep);
+for n=l:nmax 
+	t(n + 1)=t(n)+hstep ; 
+	kl=feval(f,t(n),y(n) ) ; 
+	k2=feval(f,t(n)+.5*hstep,y(n)+.5*hstep*kl) ; 
+	k3=feval(f,t(n)+.5*hstep,y(n)+.5*hstep*k2); 
+	k4=feval(f,t(n)+hstep,y(n)+hstep*k3); 
+	y(n+l)=y(n)+l/6*hstep*(kl+2*k2+2*k3+k4 ) ; 
+end
+\end{lstlisting}
+EXERCISE FOR THE READER 8.6: Write a similar MATLAB M-file, called impeuler, which will perform the improved Euler method to solve the same IVP. The syntax, input variables, and output variables should be identical to those of Program 8.2.
+\\
+
+The differences in accuracies of the three methods as evidenced in the above example are quite astounding. We now give some general information of the accuracy of the three methods. The results will be made more precise in the next section, but it is helpful to understand the main error estimates at this point. We say that an iterative method for solving an IVP:
+$$
+\left\{\begin{array}{l}
+y^{\prime}(t)=f(t, y) \\
+y(a)=y_{0}
+\end{array} \quad a \leq t \leq b\right.
+$$
+is of order $p(p=1,2,3, \ldots)$ provided that whenever the function $f(t, y)$ is sufficiently differentiable the resulting approximations corresponding to a step size $h>0: y_{0}=y\left(x_{0}\right), y_{1} \approx y\left(x_{1}\right), \ldots, y_{N} \approx y\left(x_{N}\right)$ (where $x_{N} \leq b$ ) satisfy the error estimates:
+\begin{equation}
+\left|y\left(x_{n}\right)-y_{n}\right| \leq c \cdot h^{p} \text { for } n=0,1,2, \ldots, N
+\end{equation}
+Here $c$ is a constant which, in general, depends on the method being used as well as the function $f(t, y)$ and the interval $[a, b]$ on which the IVP is being solved.
+\\
+
+To get a feel for differences in orders of convergence, the next example compares the effect of halving the step size in the error bounds of $(7)$.
+\\
+\\
+\textbf{EXAMPLE 8.8:} Suppose we had three different methods \#1, \#2, and \#3 for solving IVPs which had orders 1,2 , and 4, respectively. Suppose also that it is known that for a certain IVP, the constant $c$ in the right side of $(7)$ could be taken to be 2 for all three methods. Find the resulting error bounds (using $(7)$ ) for each of the three methods using (a) step size $h=0.1$ and (b) half of this, $h=0.05$. Compare the results.
+\\
+\\
+SOLUTION: Part (a): Using $h=0.1$, and $c=2,(7)$ would tell us that for Method \#1 the error bound is $2(0.1)=0.2$, for Method $\# 2$ it would be $2 \cdot(0.1)^{2}=0.02$, and for Method $\# 3$ it would be $2 \cdot(0.1)^{4}=0.0002$.
+\\
+\\
+Part (b): Using instead $h=0.05$, the resulting error bounds would now be (in the same order): $0.1,0.005$, and $0.00008$. Not only were the errors smaller for higherorder methods, but the same decrease in the step size resulted in more sizeable decreases in the error bound (7) with higher-order methods. For the first-order method, halving the step size halved the error bound. For the second-order method, halving the step size resulted in an error bound equal to $1 / 4$ of the original, and for the fourth-order method the error reduction factor was $1 / 16$.
+\\
+
+It turns out that Euler's method is a first-order method, the improved Euler method is a second-order method, and the Runge-Kutta method is a fourth-order method. Finding the actual constant $c$ in (7) (or a reasonable upper bound for it) for a certain IVP using one of the methods can be extremely difficult or impossible. In fact it is very often difficult to roughly estimate $c$. One common practice is to solve the IVP by repeatedly decreasing the step size and comparing the differences until the discrepancy is less than or equal to the tolerance for error. To be on the safe side, one last computation is often done by halving the step size. This does not totally guarantee the desired accuracy, but for almost all well-posed IVPs that come up in practice, this method is quite reliable.
+\\
+\\
+CAUTION: Of course, it is not feasible to try to get a solution with more significant digits than MATLAB can handle (about 15). Theoretically, all of these methods will reach any desired accuracy to the actual solution if the step size is sufficiently small (this follows from (7)). When $h$ gets very small, however, the roundoff errors begin to accumulate and the solutions we get on any floating point computer system begin to loose their accuracy. So, what will happen if we continue to decrease step sizes is that the errors will get smaller and smaller, then stop getting any smaller and afterwards begin to increase (due to roundoff error accumulation)!
+\\
+
+Our next example will deal with the problem of the free fall of an object. If we take into account air resistance, the problem becomes very difficult with conventional physics alone. In general, an object moving at a reasonable speed (e.g., a car, a baseball, a plane, a skydiver, or even a bicycle) will have a retarding air resistance force acting in the direction opposite of motion. This air resistance force will be proportional to $|v|^{p}$, where $v$ denotes the velocity and the exponent $p$ lies between 1 and 2 . The exponent $p$, as well as the constant of proportionality, will depend on things like the size and shape of the object, the speed, as well as even the density and viscosity of the air. In general, faster speeds give larger exponents $p$ and larger constants of proportionality.
+\\
+\\
+\textbf{EXAMPLE 8.9:} (Physics: Free Fall with Air Resistance) After a skydiver jumps from an airplane and until the parachute opens, the air resistance is proportional to $|v|^{1.5}$, and the maximum speed that the skydiver can reach is $80 \mathrm{mph}$.\\
+(a) Plot a graph of the skydiver's vertical falling velocity during the first 10 seconds of fall using the Runge-Kutta method with step size $h=0.01$ seconds; in the same plot include the corresponding vertical fall velocity if there were no air resistance.\\
+(b) How many seconds (to the nearest $1 / 100$ th of a second) would it take for the skydiver to break a falling speed of $60 \mathrm{mph}$ ?
+\\
+\\
+SOLUTION: Part (a): Taking the upward vertical direction as positive, there are two forces on the diver: gravity and air resistance. By Newton's second law: $F=m a=m(d v / d t)$ and since gravity's force $=m g \quad(m=$ mass, $g=$ gravity constant of the earth $=32.1740 \mathrm{ft} / \mathrm{sec}^{2}$ ) pulls the diver down (in the negative direction) and air resistance will push the skydiver upward (against the direction of motion) in the positive direction, we arrive at the following differential equation for the velocity of the diver after jumping from the plane (valid until the parachute opens and the air resistance increases considerably)
+$$
+v^{\prime}(t)=-g+c|v(t)|^{1.5}.
+$$
+The initial condition is $v(0)=0$ (where we have let $t=0$ correspond to the time that the skydiver jumped off the plane. Before we solve this IVP, we need to determine the constant $c$. We can get this by using the fact that when $v(t)$ reaches its maximum $80 \mathrm{mph}$, we must have $v^{\prime}(t)=0$, so we can substitute these values into the equation and solve for $c$. We first arrange things so that both sides of the equation will have the same units. We change $\mathrm{mph}$ to $\mathrm{ft} / \mathrm{sec}$ :
+$$
+80 \frac{\text { mile }}{\mathrm{hr}} \cdot\left(\frac{5280 \mathrm{ft}}{1 \mathrm{mile}}\right) \cdot\left(\frac{1 \mathrm{hr}}{60^{2} \mathrm{sec}}\right) \approx \frac{352}{3} \frac{\mathrm{ft}}{\mathrm{sec}} .
+$$
+Substituting this along with $v^{\prime}=0$ and $v=80$ into the DE now gives $c=$ $32.1740 /(352 / 3)^{1.5}$. We can now turn the problem over to MATLAB:
+\begin{lstlisting}[frame=none,numbers=none]
+>> f=inline('-32.1740+32.1740/(352/3)^1.5*abs(v)^1.5','t','v'); 
+>> [t,y]=runkut(f,0,10,0, 0.01); 
+>> plot(t,y*60^2/5280) %gets the v-axis to be in mph 
+>> free=inline('-32.1740', 't','v'); %free fall DE right side 
+>> [t2/y2]=runkut(free,0,10,0,.01); 
+>> hold on 
+>> plot(t2,y2*60^2/5280, '-.') 
+>> xlabel('Time(seconds)') , ylabel('Velocity of skydiver') 
+\end{lstlisting}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{img_26}
+\caption{Comparison of the vertical free fall speed of the skydiver in Example 8.9 with air resistance (solid graph) and with no air resistance (dash-dotted graph). Speed is in mph (vertical axis) and time is in seconds (horizontal axis).}
+\end{figure}
+Part (b): A simple while loop will give us the index of the desired time and then we can get the time.
+\begin{lstlisting}[frame=none,numbers=none]
+>> k=l ; 
+>> while y(k)*60^2/5280 > -60 
+k=k+l; 
+end 
+>> k ->404 
+>>t(404) ->4.03 seconds (answer).
+\end{lstlisting}
+
+\rule{485pt}{2pt}
+\textbf{EXERCISES 8.3} 
+\begin{enumerate}
+\item
+For each IVP below, do the following: (i) Starting with step size $h=1 / 2$, then $h=1 / 4$, then $h=$ $1 / 8$, etc., continue to use the improved Euler method to compute $y(1)$. Stop when the computed answers for $y(1)$ differ by less than $0.001$. How small a step size was needed for the process to stop?
+(ii) Now do the same using Euler's method.
+\begin{tasks}(2)
+\task 
+$\left\{\begin{array}{l}y^{\prime}(t)=\cos (t y)+2 t \\ y(0)=0\end{array}\right.$
+
+\task
+$\left\{\begin{array}{l}y^{\prime}(t)=y+e^{-y}-t \\ y(0)=-1\end{array}\right.$
+\task
+$\left\{\begin{array}{l}y^{\prime}(t)=\frac{2 t+y^{2}}{1+t^{2}+y} \\ y(0)=1\end{array}\right.$
+\task
+$\left\{\begin{array}{l}y^{\prime}(t)=t y^{2}-y \\ y(0)=0\end{array}\right.$
+\end{tasks}
+\item
+Redo all parts (a) through (d) of Exercise 1 but change task (i) to use the Runge-Kutta method instead of the improved Euler method.
+\item
+This exercise will be similar to what was done in Example 8.7. For each part, an IVP is given along with an explicit solution (so these IVPs are rare exceptions where explicit solutions exist). (i) Verify that the explicit function does indeed solve the IVP. (ii) Next, use each of the three methods: Euler, improved Euler, and Runge-Kutta, to numerically solve the IVP on the specified interval using the given step size $h$. Graph the approximations alongside the exact solution and plot additional error graphs as necessary.
+\begin{tasks}(1)
+\task 
+$
+\left\{\begin{array}{l}
+y^{\prime}(t)=t^{3}-2 t y \\
+y(1)=1
+\end{array} 1 \leq t \leq 5, \text { Exact Solution: } y(t)=\frac{1}{2}\left(t^{2}-1\right)+e^{t-t^{2}}, h=0.1\right.
+$
+\task
+$
+\left\{\begin{array}{l}
+r^{\prime}(t)=\frac{r \sin (t)}{1-\cos (t)} \quad 0 \leq t \leq 4, \text { Exact Solution: } r(t)=4(1-\cos (t)), h=0.01 \\
+y(0)=4
+\end{array}\right.
+$
+\task
+$
+\left\{\begin{array}{l}
+y^{\prime}(t)=t^{2} \cos (t)+\frac{2 y}{t} \quad 2 \pi \leq t \leq 10, \text { Exact Solution: } y(t)=t^{2} \sin (t), h=0.05 \\
+y(2 \pi)=0
+\end{array}\right.
+$
+\end{tasks}
+\item
+(Physics: Free Fall with Air Resistance) Redo the skydiver Example $8.9$ changing the air resistance to be proportional to $|v|^{1.1}$ (a more aerodynamic skydiver), but keeping the maximum speed at $80 \mathrm{mph}$. How does the graph differ from that of the example?
+\item
+(Physics: Free Fall with Air Resistance) Redo the skydiver Example $8.9$ changing the air resistance to be proportional to $|v|^{1.9}$ (a less aerodynamic skydiver), but keeping the maximum speed at $80 \mathrm{mph}$. How does the graph differ from that of the example?
+\end{enumerate}
+NOTE: The next three problems come from fluid dynamics. \textit{Toricelli's Law}\footnote{Evangelista Torricelli $(1608-1647)$ was an Italian physicist who is famous for having invented the mercury barometer.} describes how fast the level of fluid falls in a leaking tank. If the tank has cross-sectional area $A(y)$ (where $y$ is the height fluid level measured from the bottom of the tank), and the tank has a hole of area $a$ at its bottom, then the rate at which the fluid level drops is given by the $D E$
+$$
+y^{\prime}(t)=-a \sqrt{2 g y} / A(y)
+$$
+where g is the Earth's gravitational constant. 
+\begin{enumerate}[resume]
+\item
+(Draining a Tank) Suppose a cylindrical tank of radius $R=20$ feet and height $h=80$ feet is situated with a flat side on the ground and at the bottom there is a circular hole of radius 5 inches. Initially $(t=0)$, the tank is full with water.\\
+(a) What does Torricelli's DE look like for this problem?\\
+(b) Using the Runge-Kutta method (with step size $h$ smaller than one minute), obtain a plot of the height of the water level (in feet) versus the elapsed time (in minutes).\\
+(c) Using your approximate solution, estimate how long it will take (to the nearest minute) for the tank to drain.\\
+(d) Redo part (c) using the Runge-Kutta approximation with half of your original step size. Did this significantly affect the answer? If did, explain what needs to be done to get a more accurate answer, if possible, and do it.\\
+(e) What effect would doubling the area of the drain hole have on the answer to part (a)?
+\item
+(Draining a Tank) Redo Exercise 6 with the same cylinder but this time assume that it is lying on the ground on its round (long) side (with struts to keep if from rolling away). Do you think it would take more or less time for the tank to drain if it is situated like this? Explain. (Of course, if you have done Exercise 6, you will know the answer to this last question.)
+\item
+(Draining a Tank) Redo Exercise 6 this time for a hemispherical tank of radius $R=20$ feet which is supported with struts so the equator is at the top and the hole is circular of radius 5 inches and at the bottom.
+\item
+(Ecology) An accidental release of 10 mongooses on a pacific island has resulted in their numbers rising and their subsequent destruction of several species of native birds. An ecologist has been tracking their numbers since their release. Since the food supply is limited and varies with the month (due to seasonal changes), the ecologist has found that the mongoose population $P(t)$ will satisfy the following $\mathrm{DE}$ :
+$$
+r^{\prime}(t)=r P^{-s p^{1.6}}
+$$
+where $t$ is measured in months, $r$ is the natural growth rate of the species, which she has determined to be $0.75$, and the values of $s$ (whose factor gives rise to the death rate of mongooses due to limitations in food supply) are given monthly as follows:
+$$
+\begin{array}{|c|c|c|c|c|}
+\hline t & s & & t & s \\
+\hline 1 \text { (January) } & 0.0084 & & 7 & 0.0026 \\
+\hline 2 & 0.0032 & & 8 & 0.0033 \\
+\hline 3 & 0.0014 & & 9 & 0.0039 \\
+\hline 4 & 0.0006 & & 10 & 0.0042 \\
+\hline 5 & 0.0005 & & 11 & 0.0066 \\
+\hline 6 & 0.0011 & & 12 & 0.0075 \\
+\hline
+\end{array}
+$$
+(a) Using the above values for $s$ as constants for each corresponding monthly time interval (i.e., for all of January $0 \leq t \leq 1$ use the value $s=0.0084$, next for $1<t \leq 2$ use the value $s=0.0032$,
+
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

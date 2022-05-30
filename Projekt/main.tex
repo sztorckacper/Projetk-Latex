@@ -1,0 +1,36 @@
+\documentclass{book}
+
+\usepackage{main}		%dołączenie pliku main.sty
+\usepackage{subfiles}	%pakiet do łączenia plików
+\usepackage{graphicx}	%pakiet do wstawiania obrazów
+\usepackage{float}		%pakiet m.in. możliwości lepszego formatowania obrazów
+\graphicspath{ {./dup/} }
+\usepackage{wrapfig}
+
+\usepackage{listings}
+\usepackage{setspace}
+
+\usepackage{polski}
+\usepackage{indentfirst} %pierwszy akapit
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{setspace}
+\usepackage{subfiles}    
+\usepackage{graphicx}    
+\usepackage{float}      
+ 
+
+\usepackage{arydshln}
+\usepackage{mathtools}
+
+
+
+\begin{document}
+\tableofcontents
+\addcontentsline{toc}{section}{Contents}
+
+\subfile{ch7/ch7}
+\subfile{ch8/ch8}
+
+\end{document}

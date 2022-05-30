@@ -1,0 +1,1927 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.12)  30 MAY 2022 15:43
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./ch7(1).tex
+(ch7(1).tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24>
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.cls
+Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
+Preamble taken from file `../main.tex'
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+)
+(../main.tex
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(..//main.sty
+
+LaTeX Warning: You have requested package `..//main',
+               but the package provides `main'.
+
+Package: main 2015/07/01 package <main>
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip49
+\enit@outerparindent=\dimen141
+\enit@toks=\toks19
+\enit@inbox=\box50
+\enit@count@id=\count194
+\enitdp@description=\count195
+) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.st
+y
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count196
+) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen142
+))
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count197
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count198
+\leftroot@=\count199
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count266
+\DOTSCASE@=\count267
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count268
+\c@MaxMatrixCols=\count269
+\dotsspace@=\muskip16
+\c@parentequation=\count270
+\dspbrk@lvl=\count271
+\tag@help=\toks21
+\row@=\count272
+\column@=\count273
+\maxfields@=\count274
+\andhelp@=\toks22
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks23
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks30
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count275
+\lst@gtempboxa=\box53
+\lst@token=\toks31
+\lst@length=\count276
+\lst@currlwidth=\dimen151
+\lst@column=\count277
+\lst@pos=\count278
+\lst@lostspace=\dimen152
+\lst@width=\dimen153
+\lst@newlines=\count279
+\lst@lineno=\count280
+\lst@maxwidth=\dimen154
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count281
+\lst@skipnumbers=\count282
+\lst@framebox=\box54
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen155
+\Gm@wd@mp=\dimen156
+\Gm@odd@mp=\dimen157
+\Gm@even@mp=\dimen158
+\Gm@layoutwidth=\dimen159
+\Gm@layoutheight=\dimen160
+\Gm@layouthoffset=\dimen161
+\Gm@layoutvoffset=\dimen162
+\Gm@dimlist=\toks32
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
+) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+Package bm Info: No bold for \OT1/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OML/ztmcm/m/it, using \pmb.
+Package bm Info: No bold for \OMS/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OMX/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OT1/ptm/bx/n, using \pmb.
+Package bm Info: No bold for \OT1/ptm/m/it, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+)
+\mylen=\skip56
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box55
+\beforetitleunit=\skip57
+\aftertitleunit=\skip58
+\ttl@plus=\dimen163
+\ttl@minus=\dimen164
+\ttl@toksa=\toks33
+\titlewidth=\dimen165
+\titlewidthlast=\dimen166
+\titlewidthfirst=\dimen167
+))
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.sty
+Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
+) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count286
+\float@exts=\toks34
+\float@box=\box56
+\@float@everytoks=\toks35
+\@floatcapt=\box57
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen168
+\WF@size=\dimen169
+\c@WF@wrappedlines=\count287
+\WF@box=\box58
+\WF@everypar=\toks36
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/polski\polski.sty
+Package: polski 2021/08/25 v1.3.6 Polish language package
+
+   Inputenc package detected. Catcodes not changed.
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/arydshln\arydshln.sty
+Package: arydshln 2019/02/21 v1.76 
+\dashlinedash=\dimen170
+\dashlinegap=\dimen171
+\adl@box=\box59
+\adl@height=\dimen172
+\adl@heightsave=\dimen173
+\adl@depth=\dimen174
+\adl@depthsave=\dimen175
+\adl@finaldepth=\dimen176
+\adl@columns=\count288
+\adl@ncol=\count289
+\adl@currentcolumn=\count290
+\adl@currentcolumnsave=\count291
+\adl@totalheight=\count292
+\adl@totalheightsave=\count293
+\adl@dash=\count294
+\adl@gap=\count295
+\adl@cla=\count296
+\adl@clb=\count297
+\adl@everyvbox=\toks37
+\adl@LTpagetotal=\dimen177
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.st
+y
+Package: mathtools 2022/02/07 v1.28a mathematical typesetting tools
+ (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count298
+\calc@Bcount=\count299
+\calc@Adimen=\dimen178
+\calc@Bdimen=\dimen179
+\calc@Askip=\skip59
+\calc@Bskip=\skip60
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count300
+\calc@Cskip=\skip61
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count301
+\l_MT_multwidth_dim=\dimen180
+\origjot=\skip62
+\l_MT_shortvdotswithinadjustabove_dim=\dimen181
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen182
+\l_MT_above_intertext_sep=\dimen183
+\l_MT_below_intertext_sep=\dimen184
+\l_MT_above_shortintertext_sep=\dimen185
+\l_MT_below_shortintertext_sep=\dimen186
+\xmathstrut@box=\box60
+\xmathstrut@dim=\dimen187
+)))
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/sidecap\sidecap.sty
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\SC@BOXWD=\dimen188
+\SC@CAPWD=\dimen189
+\SC@tempdima=\dimen190
+\SC@tempdimb=\dimen191
+\c@SC@C=\count302
+\SC@BOX=\box61
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tasks\tasks.sty
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-02-24 L3 programming layer (loader) 
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count303
+\l__pdf_internal_box=\box62
+))
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpar
+se.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\x
+template.sty
+Package: xtemplate 2022-01-12 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen192
+\l__xtemplate_tmp_int=\count304
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip63
+)
+Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
+\g__tasks_total_items_int=\count305
+\l__tasks_columns_int=\count306
+\g__tasks_rows_int=\count307
+\g__tasks_current_col_num_int=\count308
+\g__tasks_current_row_num_int=\count309
+\l__tasks_item_columns_int=\count310
+\g__tasks_env_int=\count311
+\l__tasks_start_int=\count312
+\l__tasks_item_indent_dim=\dimen193
+\l__tasks_item_default_indent_dim=\dimen194
+\l__tasks_item_width_dim=\dimen195
+\l__tasks_label_width_dim=\dimen196
+\l__tasks_label_default_width_dim=\dimen197
+\l__tasks_label_offset_dim=\dimen198
+\l__tasks_label_default_offset_dim=\dimen199
+\l__tasks_column_sep_dim=\dimen256
+\l__tasks_correction_dim=\dimen257
+\l__tasks_full_width_dim=\dimen258
+\l__tasks_after_item_skip=\skip64
+\l__tasks_custom_after_item_skip=\skip65
+\l__tasks_before_list_skip=\skip66
+\l__tasks_after_list_skip=\skip67
+\l__tasks_item_coffin=\box63
+\l__tasks_label_coffin=\box64
+\c@task=\count313
+\l__tasks_tmpa_int=\count314
+\l__tasks_tmpb_int=\count315
+\l__tasks_tmpa_coffin=\box65
+\l__tasks_tmpa_box=\box66
+
+Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
+(xtemplate)             line 450.
+
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tasks\tasks.cfg))
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count316
+\mult@box=\box67
+\multicol@leftmargin=\dimen259
+\c@unbalance=\count317
+\c@collectmore=\count318
+\doublecol@number=\count319
+\multicoltolerance=\count320
+\multicolpretolerance=\count321
+\full@width=\dimen260
+\page@free=\dimen261
+\premulticols=\dimen262
+\postmulticols=\dimen263
+\multicolsep=\skip68
+\multicolbaselineskip=\skip69
+\partial@page=\box68
+\last@line=\box69
+\maxbalancingoverflow=\dimen264
+\mult@rightbox=\box70
+\mult@grightbox=\box71
+\mult@firstbox=\box72
+\mult@gfirstbox=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\c@minrows=\count322
+\c@columnbadness=\count323
+\c@finalcolumnbadness=\count324
+\last@try=\dimen265
+\multicolovershoot=\dimen266
+\multicolundershoot=\dimen267
+\mult@nat@firstbox=\box110
+\colbreak@box=\box111
+\mc@col@check@num=\count325
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen268
+\captionmargin=\dimen269
+\caption@leftmargin=\dimen270
+\caption@rightmargin=\dimen271
+\caption@width=\dimen272
+\caption@indent=\dimen273
+\caption@parindent=\dimen274
+\caption@hangindent=\dimen275
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count326
+\c@continuedfloat=\count327
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: sidecap package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 8.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(ch7(1).aux)
+\openout1 = `ch7(1).aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count328
+\scratchdimen=\dimen276
+\scratchbox=\box112
+\nofMPsegments=\count329
+\nofMParguments=\count330
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count331
+\MPscratchDim=\dimen277
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
+\everyMPtoPDFconversion=\toks39
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count334
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 759.6886pt, 28.45274pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=759.6886pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-45.43198pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=33.0053pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+Package: ragged2e 2021/12/15 v3.1 ragged2e Package
+\CenteringLeftskip=\skip70
+\RaggedLeftLeftskip=\skip71
+\RaggedRightLeftskip=\skip72
+\CenteringRightskip=\skip73
+\RaggedLeftRightskip=\skip74
+\RaggedRightRightskip=\skip75
+\CenteringParfillskip=\skip76
+\RaggedLeftParfillskip=\skip77
+\RaggedRightParfillskip=\skip78
+\JustifyingParfillskip=\skip79
+\CenteringParindent=\skip80
+\RaggedLeftParindent=\skip81
+\RaggedRightParindent=\skip82
+\JustifyingParindent=\skip83
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Rozdzia\PlPrIeC {\l } 1.
+[1
+
+
+{C:/Users/Kacper/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
+
+]
+Rozdzia\PlPrIeC {\l } 2.
+[3] [4
+
+]
+Rozdzia\PlPrIeC {\l } 3.
+[5] [6
+
+]
+Rozdzia\PlPrIeC {\l } 4.
+[7] [8
+
+]
+Rozdzia\PlPrIeC {\l } 5.
+[9] [10
+
+]
+Rozdzia\PlPrIeC {\l } 6.
+[11] [12
+
+]
+Rozdzia\PlPrIeC {\l } 7.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 29.
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 29.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 29.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 29.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+9.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 37
+.
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 32--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--140
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 141--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--200
+
+ []
+
+
+Overfull \hbox (13.75917pt too wide) in paragraph at lines 187--200
+\T1/ptm/m/n/10 EXERCISE FOR THE RE-ADER 7.19: Wri-te si-mi-lar func-tion M-file
+s \T1/pcr/m/n/10 B=rowmult (A,i,c) \T1/ptm/m/n/10 for ERO (i) and \T1/pcr/m/n/1
+0 B=rowcomb
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--223
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 231--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--405
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--443
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 444--470
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--470
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--470
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--504
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--535
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 566--570
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--624
+
+ []
+
+
+Overfull \hbox (5.17203pt too wide) in paragraph at lines 625--638
+ [] 
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 640--646
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--659
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 666.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 666.
+
+Underfull \hbox (badness 10000) in paragraph at lines 677--679
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 767--774
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 775--778
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 780--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 780--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 860--867
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 884--894
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 884--894
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 895--925
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 895--925
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 895--925
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 895--925
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 925--932
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 925--932
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 925--932
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--940
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--940
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--940
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 944--957
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--967
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 974--980
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--990
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--990
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 994--997
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 994--997
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1009
+
+ []
+
+
+Overfull \hbox (1.30313pt too wide) in paragraph at lines 1000--1009
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1066
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1066
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1114--1117
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 1193--1218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1193--1218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1193--1218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1218--1222
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1280
+
+ []
+
+
+Package amsmath Warning: Foreign command \atop;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 1294.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1295--1313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1315--1321
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1326
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1409
+
+ []
+
+[23]
+Overfull \hbox (16.70915pt too wide) in paragraph at lines 1462--1480
+\T1/ptm/m/n/10 (c) Do a flop co-unt si-mi-lar to the one do-ne for Pro-po-si-ti
+on $\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 andflopcounts\OT1/ztmcm/m/n/10 )\OML/
+ztmcm/m/it/10 tothosewithMATLAB[]sbuilt \OMS/ztmcm/m/n/10 ^^@ \OML/ztmcm/m/it/1
+0 infunction\OT1/ztmcm/m/n/10 7\OML/ztmcm/m/it/10 :\OT1/ztmcm/m/n/10 5$
+ []
+
+
+Overfull \hbox (7.06316pt too wide) in paragraph at lines 1483--1483
+|[]\T1/ptm/b/sc/16 VECTOR AND MA-TRIX NORMS, ER-ROR ANA-LY-SIS, AND
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1488--1491
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1507--1520
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1549--1559
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1549--1559
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1560--1564
+
+ []
+
+<.././dup//img_1.png, id=88, 204.765pt x 315.579pt>
+File: .././dup//img_1.png Graphic file (type png)
+<use .././dup//img_1.png>
+Package pdftex.def Info: .././dup//img_1.png  used on input line 1574.
+(pdftex.def)             Requested size: 120.92421pt x 186.36815pt.
+
+Underfull \hbox (badness 2197) in paragraph at lines 1575--1578
+[][]\T1/ptm/m/n/10 Given any vec-tor norm, we de-fi-ne an \T1/ptm/b/n/10 as-so-
+cia-ted ma-trix norm \T1/ptm/m/n/10 by the fol-lo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1575--1578
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1569--1586
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 1587--1589
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1605--1620
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1605--1620
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1621--1622
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1624--1629
+
+ []
+
+[26 <.././dup//img_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1640--1644
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1646--1650
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1652--1656
+
+ []
+
+<.././dup//img_2.png, id=97, 435.42674pt x 338.4645pt>
+File: .././dup//img_2.png Graphic file (type png)
+<use .././dup//img_2.png>
+Package pdftex.def Info: .././dup//img_2.png  used on input line 1663.
+(pdftex.def)             Requested size: 193.47578pt x 150.39157pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1669--1671
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1673--1675
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1676--1678
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1679--1698
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1679--1698
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1679--1698
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1679--1698
+
+ []
+
+[27 <.././dup//img_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1700--1704
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1709--1711
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1722--1726
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1727--1729
+
+ []
+
+[28]
+<.././dup//img_3.png, id=104, 482.40225pt x 100.57574pt>
+File: .././dup//img_3.png Graphic file (type png)
+<use .././dup//img_3.png>
+Package pdftex.def Info: .././dup//img_3.png  used on input line 1730.
+(pdftex.def)             Requested size: 193.47578pt x 40.337pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1732--1736
+
+ []
+
+<.././dup//img_4.png, id=105, 354.72525pt x 198.7425pt>
+File: .././dup//img_4.png Graphic file (type png)
+<use .././dup//img_4.png>
+Package pdftex.def Info: .././dup//img_4.png  used on input line 1746.
+(pdftex.def)             Requested size: 177.36218pt x 99.371pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1786--1789
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1797--1802
+
+ []
+
+[29 <.././dup//img_3.png> <.././dup//img_4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1827--1829
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1830--1834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1854--1858
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1883--1891
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1915--1919
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1934--1936
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1937--1943
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 1961--1971
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1982--1986
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1992--1996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2015--2021
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 2044--2063
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2081--2085
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2090--2093
+
+ []
+
+<.././dup//img_5.png, id=119, 636.57825pt x 310.15875pt>
+File: .././dup//img_5.png Graphic file (type png)
+<use .././dup//img_5.png>
+Package pdftex.def Info: .././dup//img_5.png  used on input line 2096.
+(pdftex.def)             Requested size: 483.69687pt x 235.67577pt.
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 2103--2106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2128--2134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2128--2134
+
+ []
+
+[34 <.././dup//img_5.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2177--2185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2177--2185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2190--2192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2193--2220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2193--2220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2193--2220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2193--2220
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 2225--2228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2229--2231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2243--2246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2256--2264
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 2272--2274
+
+ []
+
+
+Overfull \hbox (36.86906pt too wide) in paragraph at lines 2333--2334
+[][] 
+ []
+
+[37] [38]
+Overfull \hbox (23.39247pt too wide) in paragraph at lines 2429--2436
+\T1/ptm/m/n/10 dia-go-nal, and who-se re-ma-ining en-tries (abo-ve the ma-in di
+a-go-nal) are ze-ros, and let $\OML/ztmcm/m/it/10 b \OT1/ztmcm/m/n/10 = [][]$\T
+1/ptm/m/n/10 . 
+ []
+
+[39]
+
+Package tasks Warning: You've tried setting option `counter-format' on line
+(tasks)                2470. However, option `counter-format' is deprecated.
+(tasks)                Please use option `label' instead. Refer to the manual
+(tasks)                for details.
+
+
+Package tasks Warning: You've tried setting option `counter-format' on line
+(tasks)                2482. However, option `counter-format' is deprecated.
+(tasks)                Please use option `label' instead. Refer to the manual
+(tasks)                for details.
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 2541--2544
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2545--2547
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 2548--2552
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2562--2567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2569--2575
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2581--2587
+
+ []
+
+[42]
+<.././dup//img_6.png, id=151, 705.23476pt x 289.68225pt>
+File: .././dup//img_6.png Graphic file (type png)
+<use .././dup//img_6.png>
+Package pdftex.def Info: .././dup//img_6.png  used on input line 2657.
+(pdftex.def)             Requested size: 483.69687pt x 198.68309pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+Underfull \hbox (badness 10000) in paragraph at lines 2665--2673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2665--2673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2674--2678
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2680--2686
+
+ []
+
+[44 <.././dup//img_6.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2739--2743
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2747--2751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2754--2756
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2757--2761
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2763--2766
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2767--2769
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2770--2783
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2770--2783
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2770--2783
+
+ []
+
+[45]
+<.././dup//img_7.png, id=162, 416.757pt x 324.0105pt>
+File: .././dup//img_7.png Graphic file (type png)
+<use .././dup//img_7.png>
+Package pdftex.def Info: .././dup//img_7.png  used on input line 2799.
+(pdftex.def)             Requested size: 241.84843pt x 188.0251pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 2799--2800
+[][] 
+ []
+
+<.././dup//img_8.png, id=163, 691.98524pt x 495.65175pt>
+File: .././dup//img_8.png Graphic file (type png)
+<use .././dup//img_8.png>
+Package pdftex.def Info: .././dup//img_8.png  used on input line 2814.
+(pdftex.def)             Requested size: 386.95897pt x 277.1698pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46 <.././dup//img_7.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2817--2819
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2820--2822
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2823--2825
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2826--2828
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2859--2861
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2862--2864
+
+ []
+
+[47 <.././dup//img_8.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2868--2871
+
+ []
+
+<.././dup//img_9.png, id=170, 897.95474pt x 216.81pt>
+File: .././dup//img_9.png Graphic file (type png)
+<use .././dup//img_9.png>
+Package pdftex.def Info: .././dup//img_9.png  used on input line 2899.
+(pdftex.def)             Requested size: 483.69687pt x 116.78783pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2888--2900
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2888--2900
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2901--2907
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2901--2907
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2908--2915
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2908--2915
+
+ []
+
+[48 <.././dup//img_9.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2925--2929
+
+ []
+
+<.././dup//img_10.png, id=174, 476.982pt x 378.81525pt>
+File: .././dup//img_10.png Graphic file (type png)
+<use .././dup//img_10.png>
+Package pdftex.def Info: .././dup//img_10.png  used on input line 2939.
+(pdftex.def)             Requested size: 241.84843pt x 192.07762pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 2939--2940
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2944--2956
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2960--2963
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2964--2966
+
+ []
+
+[49 <.././dup//img_10.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2967--2972
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2967--2972
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2973--2977
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2998--3000
+
+ []
+
+
+Overfull \hbox (2.97452pt too wide) in paragraph at lines 3001--3002
+[]\T1/ptm/m/n/10 The ma-trix we will ana-ly-ze ari-ses in so-lving the so-calle
+d Po-is-son bo-un-da-ry va-lue pro-blem on the two-dimensional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3007--3010
+
+ []
+
+
+Underfull \vbox (badness 2753) has occurred while \output is active []
+
+ [50]
+Underfull \hbox (badness 10000) in paragraph at lines 3093--3095
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3096--3098
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3099--3101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3102--3112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3102--3112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3113--3125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3113--3125
+
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 3169--3171
+
+ []
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 3172--3174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3175--3177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3178--3183
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+Underfull \hbox (badness 10000) in paragraph at lines 3222--3228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3222--3228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3228--3239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3228--3239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3251--3257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3251--3257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3251--3257
+
+ []
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 3285--3287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3288--3290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3321--3324
+
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 3344--3354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3344--3354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3383--3385
+
+ []
+
+<.././dup//img_11.png, id=198, 583.58025pt x 430.60875pt>
+File: .././dup//img_11.png Graphic file (type png)
+<use .././dup//img_11.png>
+Package pdftex.def Info: .././dup//img_11.png  used on input line 3389.
+(pdftex.def)             Requested size: 483.69687pt x 356.91237pt.
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 3392--3394
+
+ []
+
+[57 <.././dup//img_11.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 3436--3440
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3444--3451
+
+ []
+
+
+Overfull \hbox (1.30313pt too wide) in paragraph at lines 3482--3485
+[] 
+ []
+
+[58]
+
+Package tasks Warning: You've tried setting option `counter-format' on line
+(tasks)                3495. However, option `counter-format' is deprecated.
+(tasks)                Please use option `label' instead. Refer to the manual
+(tasks)                for details.
+
+
+Package tasks Warning: You've tried setting option `counter-format' on line
+(tasks)                3527. However, option `counter-format' is deprecated.
+(tasks)                Please use option `label' instead. Refer to the manual
+(tasks)                for details.
+
+[59] [60] [61] [62] [63] (ch7(1).aux) ) 
+Here is how much of TeX's memory you used:
+ 10122 strings out of 478582
+ 169134 string characters out of 2843872
+ 824429 words of memory out of 3000000
+ 28097 multiletter control sequences out of 15000+600000
+ 550720 words of font info for 151 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 90i,16n,93p,2136b,1726s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/Kacper/AppData/Local/Programs/
+MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Kacper/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Kacper/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Kacper/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Kacpe
+r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
+sers/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courie
+r/ucrr8a.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/sym
+bol/usyr.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/sym
+bol/usyr.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
+es/utmb8a.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ti
+mes/utmr8a.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
+imes/utmr8a.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on ch7(1).pdf (63 pages, 1232700 bytes).
+PDF statistics:
+ 277 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+

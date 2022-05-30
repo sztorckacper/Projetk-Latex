@@ -1,0 +1,1386 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.12)  30 MAY 2022 15:43
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./ch8(1).tex
+(ch8(1).tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24>
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.cls
+Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
+Preamble taken from file `../main.tex'
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+)
+(../main.tex
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(..//main.sty
+
+LaTeX Warning: You have requested package `..//main',
+               but the package provides `main'.
+
+Package: main 2015/07/01 package <main>
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip49
+\enit@outerparindent=\dimen141
+\enit@toks=\toks19
+\enit@inbox=\box50
+\enit@count@id=\count194
+\enitdp@description=\count195
+) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.st
+y
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count196
+) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen142
+))
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count197
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count198
+\leftroot@=\count199
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count266
+\DOTSCASE@=\count267
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count268
+\c@MaxMatrixCols=\count269
+\dotsspace@=\muskip16
+\c@parentequation=\count270
+\dspbrk@lvl=\count271
+\tag@help=\toks21
+\row@=\count272
+\column@=\count273
+\maxfields@=\count274
+\andhelp@=\toks22
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks23
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks30
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count275
+\lst@gtempboxa=\box53
+\lst@token=\toks31
+\lst@length=\count276
+\lst@currlwidth=\dimen151
+\lst@column=\count277
+\lst@pos=\count278
+\lst@lostspace=\dimen152
+\lst@width=\dimen153
+\lst@newlines=\count279
+\lst@lineno=\count280
+\lst@maxwidth=\dimen154
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count281
+\lst@skipnumbers=\count282
+\lst@framebox=\box54
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen155
+\Gm@wd@mp=\dimen156
+\Gm@odd@mp=\dimen157
+\Gm@even@mp=\dimen158
+\Gm@layoutwidth=\dimen159
+\Gm@layoutheight=\dimen160
+\Gm@layouthoffset=\dimen161
+\Gm@layoutvoffset=\dimen162
+\Gm@dimlist=\toks32
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
+) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+Package bm Info: No bold for \OT1/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OML/ztmcm/m/it, using \pmb.
+Package bm Info: No bold for \OMS/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OMX/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OT1/ptm/bx/n, using \pmb.
+Package bm Info: No bold for \OT1/ptm/m/it, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+)
+\mylen=\skip56
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box55
+\beforetitleunit=\skip57
+\aftertitleunit=\skip58
+\ttl@plus=\dimen163
+\ttl@minus=\dimen164
+\ttl@toksa=\toks33
+\titlewidth=\dimen165
+\titlewidthlast=\dimen166
+\titlewidthfirst=\dimen167
+))
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.sty
+Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
+) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count286
+\float@exts=\toks34
+\float@box=\box56
+\@float@everytoks=\toks35
+\@floatcapt=\box57
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen168
+\WF@size=\dimen169
+\c@WF@wrappedlines=\count287
+\WF@box=\box58
+\WF@everypar=\toks36
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/polski\polski.sty
+Package: polski 2021/08/25 v1.3.6 Polish language package
+
+   Inputenc package detected. Catcodes not changed.
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/arydshln\arydshln.sty
+Package: arydshln 2019/02/21 v1.76 
+\dashlinedash=\dimen170
+\dashlinegap=\dimen171
+\adl@box=\box59
+\adl@height=\dimen172
+\adl@heightsave=\dimen173
+\adl@depth=\dimen174
+\adl@depthsave=\dimen175
+\adl@finaldepth=\dimen176
+\adl@columns=\count288
+\adl@ncol=\count289
+\adl@currentcolumn=\count290
+\adl@currentcolumnsave=\count291
+\adl@totalheight=\count292
+\adl@totalheightsave=\count293
+\adl@dash=\count294
+\adl@gap=\count295
+\adl@cla=\count296
+\adl@clb=\count297
+\adl@everyvbox=\toks37
+\adl@LTpagetotal=\dimen177
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.st
+y
+Package: mathtools 2022/02/07 v1.28a mathematical typesetting tools
+ (C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count298
+\calc@Bcount=\count299
+\calc@Adimen=\dimen178
+\calc@Bdimen=\dimen179
+\calc@Askip=\skip59
+\calc@Bskip=\skip60
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count300
+\calc@Cskip=\skip61
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count301
+\l_MT_multwidth_dim=\dimen180
+\origjot=\skip62
+\l_MT_shortvdotswithinadjustabove_dim=\dimen181
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen182
+\l_MT_above_intertext_sep=\dimen183
+\l_MT_below_intertext_sep=\dimen184
+\l_MT_above_shortintertext_sep=\dimen185
+\l_MT_below_shortintertext_sep=\dimen186
+\xmathstrut@box=\box60
+\xmathstrut@dim=\dimen187
+)))
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/sidecap\sidecap.sty
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\SC@BOXWD=\dimen188
+\SC@CAPWD=\dimen189
+\SC@tempdima=\dimen190
+\SC@tempdimb=\dimen191
+\c@SC@C=\count302
+\SC@BOX=\box61
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tasks\tasks.sty
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-02-24 L3 programming layer (loader) 
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count303
+\l__pdf_internal_box=\box62
+))
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpar
+se.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\x
+template.sty
+Package: xtemplate 2022-01-12 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen192
+\l__xtemplate_tmp_int=\count304
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip63
+)
+Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
+\g__tasks_total_items_int=\count305
+\l__tasks_columns_int=\count306
+\g__tasks_rows_int=\count307
+\g__tasks_current_col_num_int=\count308
+\g__tasks_current_row_num_int=\count309
+\l__tasks_item_columns_int=\count310
+\g__tasks_env_int=\count311
+\l__tasks_start_int=\count312
+\l__tasks_item_indent_dim=\dimen193
+\l__tasks_item_default_indent_dim=\dimen194
+\l__tasks_item_width_dim=\dimen195
+\l__tasks_label_width_dim=\dimen196
+\l__tasks_label_default_width_dim=\dimen197
+\l__tasks_label_offset_dim=\dimen198
+\l__tasks_label_default_offset_dim=\dimen199
+\l__tasks_column_sep_dim=\dimen256
+\l__tasks_correction_dim=\dimen257
+\l__tasks_full_width_dim=\dimen258
+\l__tasks_after_item_skip=\skip64
+\l__tasks_custom_after_item_skip=\skip65
+\l__tasks_before_list_skip=\skip66
+\l__tasks_after_list_skip=\skip67
+\l__tasks_item_coffin=\box63
+\l__tasks_label_coffin=\box64
+\c@task=\count313
+\l__tasks_tmpa_int=\count314
+\l__tasks_tmpb_int=\count315
+\l__tasks_tmpa_coffin=\box65
+\l__tasks_tmpa_box=\box66
+
+Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
+(xtemplate)             line 450.
+
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tasks\tasks.cfg))
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count316
+\mult@box=\box67
+\multicol@leftmargin=\dimen259
+\c@unbalance=\count317
+\c@collectmore=\count318
+\doublecol@number=\count319
+\multicoltolerance=\count320
+\multicolpretolerance=\count321
+\full@width=\dimen260
+\page@free=\dimen261
+\premulticols=\dimen262
+\postmulticols=\dimen263
+\multicolsep=\skip68
+\multicolbaselineskip=\skip69
+\partial@page=\box68
+\last@line=\box69
+\maxbalancingoverflow=\dimen264
+\mult@rightbox=\box70
+\mult@grightbox=\box71
+\mult@firstbox=\box72
+\mult@gfirstbox=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\c@minrows=\count322
+\c@columnbadness=\count323
+\c@finalcolumnbadness=\count324
+\last@try=\dimen265
+\multicolovershoot=\dimen266
+\multicolundershoot=\dimen267
+\mult@nat@firstbox=\box110
+\colbreak@box=\box111
+\mc@col@check@num=\count325
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen268
+\captionmargin=\dimen269
+\caption@leftmargin=\dimen270
+\caption@rightmargin=\dimen271
+\caption@width=\dimen272
+\caption@indent=\dimen273
+\caption@parindent=\dimen274
+\caption@hangindent=\dimen275
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count326
+\c@continuedfloat=\count327
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: sidecap package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 8.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(ch8(1).aux)
+\openout1 = `ch8(1).aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count328
+\scratchdimen=\dimen276
+\scratchbox=\box112
+\nofMPsegments=\count329
+\nofMParguments=\count330
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count331
+\MPscratchDim=\dimen277
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
+\everyMPtoPDFconversion=\toks39
+)
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count334
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 759.6886pt, 28.45274pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=759.6886pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-45.43198pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=33.0053pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+Package: ragged2e 2021/12/15 v3.1 ragged2e Package
+\CenteringLeftskip=\skip70
+\RaggedLeftLeftskip=\skip71
+\RaggedRightLeftskip=\skip72
+\CenteringRightskip=\skip73
+\RaggedLeftRightskip=\skip74
+\RaggedRightRightskip=\skip75
+\CenteringParfillskip=\skip76
+\RaggedLeftParfillskip=\skip77
+\RaggedRightParfillskip=\skip78
+\JustifyingParfillskip=\skip79
+\CenteringParindent=\skip80
+\RaggedLeftParindent=\skip81
+\RaggedRightParindent=\skip82
+\JustifyingParindent=\skip83
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Rozdzia\PlPrIeC {\l } 1.
+[1
+
+
+{C:/Users/Kacper/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
+
+]
+Rozdzia\PlPrIeC {\l } 2.
+[3] [4
+
+]
+Rozdzia\PlPrIeC {\l } 3.
+[5] [6
+
+]
+Rozdzia\PlPrIeC {\l } 4.
+[7] [8
+
+]
+Rozdzia\PlPrIeC {\l } 5.
+[9] [10
+
+]
+Rozdzia\PlPrIeC {\l } 6.
+[11] [12
+
+]
+Rozdzia\PlPrIeC {\l } 7.
+[13] [14
+
+]
+Rozdzia\PlPrIeC {\l } 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 26.
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 26.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 26.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 26.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+6.
+
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--35
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \hbox (badness 10000) in paragraph at lines 48--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
+
+ []
+
+[16]
+Overfull \hbox (2.37311pt too wide) in paragraph at lines 80--80
+|[]\T1/ptm/b/sc/16 SOME BA-SIC DIF-FE-REN-TIAL EQU-ATION MO-DELS AND
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--89
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 97
+.
+(C:\Users\Kacper\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+<.././dup//img_12.png, id=60, 525.76425pt x 425.79076pt>
+File: .././dup//img_12.png Graphic file (type png)
+<use .././dup//img_12.png>
+Package pdftex.def Info: .././dup//img_12.png  used on input line 112.
+(pdftex.def)             Requested size: 290.22107pt x 235.03674pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--125
+
+ []
+
+[17 <.././dup//img_12.png>]
+<.././dup//img_13.png, id=65, 255.354pt x 299.9205pt>
+File: .././dup//img_13.png Graphic file (type png)
+<use .././dup//img_13.png>
+Package pdftex.def Info: .././dup//img_13.png  used on input line 135.
+(pdftex.def)             Requested size: 120.92421pt x 142.02895pt.
+
+Underfull \hbox (badness 1655) in paragraph at lines 136--136
+[]\T1/ptm/m/n/10 Rysunek 8.2: |Tho-mas Mal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+\T1/ptm/m/n/10 thus (1766-1834), En-glish
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 138.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 138.
+<.././dup//img_14.png, id=66, 763.653pt x 208.98074pt>
+File: .././dup//img_14.png Graphic file (type png)
+<use .././dup//img_14.png>
+Package pdftex.def Info: .././dup//img_14.png  used on input line 143.
+(pdftex.def)             Requested size: 483.69687pt x 132.36966pt.
+
+Underfull \hbox (badness 3977) in paragraph at lines 137--145
+[]\T1/ptm/m/n/10 where we ha-ve let $\OML/ztmcm/m/it/10 r \OT1/ztmcm/m/n/10 = \
+OML/ztmcm/m/it/10 ^^L \OMS/ztmcm/m/n/10 ^^@ \OML/ztmcm/m/it/10 ^^N$ \T1/ptm/m/n
+/10 ( $\OMS/ztmcm/m/n/10 ^^Q$ \T1/ptm/m/n/10 re-sul-tant growth ra-te). This po
+-pu-la-tion
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 137--145
+\T1/ptm/m/n/10 mo-del is cre-di-ted to the po-li-ti-cal eco-no-mist Tho-mas Mal
+-thus[] and is cu-sto-
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 137--145
+\T1/ptm/m/n/10 ma-ri-ly re-fer-red to as the Mal-thus growth mo-del. This DE is
+ easy to so-
+ []
+
+
+Underfull \hbox (badness 7012) in paragraph at lines 137--145
+\T1/ptm/m/n/10 lve expli-ci-tly. Thin-king of a func-tion that is its own de-ri
+-va-ti-ve, we co-
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 137--145
+\T1/ptm/m/n/10 me up with $\OML/ztmcm/m/it/10 e[]$\T1/ptm/m/n/10 . The DE abo-v
+e sta-tes that the de-ri-va-ti-ve of a func-tion sho-
+ []
+
+
+Underfull \hbox (badness 8075) in paragraph at lines 137--145
+\T1/ptm/m/n/10 uld equ-al $\OML/ztmcm/m/it/10 r$ \T1/ptm/m/n/10 ti-mes the func
+-tion. Sin-ce $[][] \OT1/ztmcm/m/n/10 = \OML/ztmcm/m/it/10 re[]$\T1/ptm/m/n/10 
+, we see that $\OML/ztmcm/m/it/10 P\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 t\OT1/
+ztmcm/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 137--145
+\OML/ztmcm/m/it/10 e[]$ \T1/ptm/m/n/10 will so-lve the DE. Al-so, we can mul-ti
+-ply this so-lu-tion by any con-
+ []
+
+
+Underfull \hbox (badness 3690) in paragraph at lines 137--145
+\T1/ptm/m/n/10 stant and it will still so-lve the DE (why?). We ha-ve just fo-u
+nd a col-lec-
+ []
+
+
+Underfull \hbox (badness 4699) in paragraph at lines 137--145
+\T1/ptm/m/n/10 tion of so-lu-tions to the DE (2) to be $\OML/ztmcm/m/it/10 P\OT
+1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 t\OT1/ztmcm/m/n/10 ) = C\OML/ztmcm/m/it/10 e
+[]$ \T1/ptm/m/n/10 (whe-re $\OML/ztmcm/m/it/10 C$ \T1/ptm/m/n/10 is an ar-bi-
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 137--145
+\T1/ptm/m/n/10 tra-ry con-stant). It turns out that the-re are no other so-lu-t
+ions (this will fol-
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 137--145
+\T1/ptm/m/n/10 low from uni-qu-eness the-orems that we gi-ve la-ter; see al-so 
+Exer-ci-se 8 of
+ []
+
+
+Underfull \hbox (badness 7133) in paragraph at lines 137--145
+\T1/ptm/m/n/10 this sec-tion) and thus this is the ge-ne-ral so-lu-tion. If we 
+sub-sti-tu-te $\OML/ztmcm/m/it/10 t \OT1/ztmcm/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 5161) in paragraph at lines 137--145
+\OT1/ztmcm/m/n/10 0$ \T1/ptm/m/n/10 in-to this ge-ne-ral so-lu-tion, we get $\O
+ML/ztmcm/m/it/10 P\OT1/ztmcm/m/n/10 (0) = C\OML/ztmcm/m/it/10 e[] \OT1/ztmcm/m/
+n/10 = \OML/ztmcm/m/it/10 C$\T1/ptm/m/n/10 , so the con-stant $\OML/ztmcm/m/it/
+10 C$
+ []
+
+
+Underfull \hbox (badness 8000) in paragraph at lines 137--145
+\T1/ptm/m/n/10 turns out to be the in-i-tial po-pu-la-tion ( $\OMS/ztmcm/m/n/10
+ ^^Q$ \T1/ptm/m/n/10 the po-pu-la-tion at ti-me $\OML/ztmcm/m/it/10 t \OT1/ztmc
+m/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 4699) in paragraph at lines 137--145
+\OT1/ztmcm/m/n/10 0$\T1/ptm/m/n/10 ). De-pen-ding on the va-lue of $\OML/ztmcm/
+m/it/10 r$\T1/ptm/m/n/10 , we ha-ve three dif-fe-rent ca-ses for what
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 137--145
+\T1/ptm/m/n/10 will hap-pen to such a po-pu-la-tion. The-se si-tu-ations are su
+m-ma-ri-zed in Fi-gu-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--155
+
+ []
+
+[18 <.././dup//img_13.png> <.././dup//img_14.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 159--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
+
+ []
+
+<.././dup//img_15.png, id=71, 367.97475pt x 440.24475pt>
+File: .././dup//img_15.png Graphic file (type png)
+<use .././dup//img_15.png>
+Package pdftex.def Info: .././dup//img_15.png  used on input line 175.
+(pdftex.def)             Requested size: 120.92421pt x 144.6699pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--177
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 182--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--200
+
+ []
+
+<.././dup//img_16.png, id=77, 491.436pt x 481.8pt>
+File: .././dup//img_16.png Graphic file (type png)
+<use .././dup//img_16.png>
+Package pdftex.def Info: .././dup//img_16.png  used on input line 214.
+(pdftex.def)             Requested size: 193.47578pt x 189.68034pt.
+[20 <.././dup//img_15.png> <.././dup//img_16.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--276
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
+
+ []
+
+<.././dup//img_17.png, id=84, 542.025pt x 418.56375pt>
+File: .././dup//img_17.png Graphic file (type png)
+<use .././dup//img_17.png>
+Package pdftex.def Info: .././dup//img_17.png  used on input line 294.
+(pdftex.def)             Requested size: 241.84843pt x 186.76163pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 294--295
+[][] 
+ []
+
+<.././dup//img_18.png, id=85, 504.6855pt x 397.485pt>
+File: .././dup//img_18.png Graphic file (type png)
+<use .././dup//img_18.png>
+Package pdftex.def Info: .././dup//img_18.png  used on input line 311.
+(pdftex.def)             Requested size: 241.84843pt x 190.48131pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 311--312
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--319
+
+ []
+
+[22 <.././dup//img_17.png> <.././dup//img_18.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 339--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--357
+
+ []
+
+<.././dup//img_19.png, id=89, 676.32675pt x 480.5955pt>
+File: .././dup//img_19.png Graphic file (type png)
+<use .././dup//img_19.png>
+Package pdftex.def Info: .././dup//img_19.png  used on input line 371.
+(pdftex.def)             Requested size: 338.58632pt x 240.59782pt.
+<.././dup//img_20.png, id=90, 367.3725pt x 305.943pt>
+File: .././dup//img_20.png Graphic file (type png)
+<use .././dup//img_20.png>
+Package pdftex.def Info: .././dup//img_20.png  used on input line 384.
+(pdftex.def)             Requested size: 290.22107pt x 241.7063pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--386
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--386
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--386
+
+ []
+
+[23 <.././dup//img_19.png>]
+Underfull \hbox (badness 4765) in paragraph at lines 386--389
+[]\T1/ptm/m/n/10 After this in-flec-tion po-int, $\OML/ztmcm/m/it/10 P$ \T1/ptm
+/m/n/10 will con-
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 386--389
+\T1/ptm/m/n/10 ti-nue to in-cre-ase, but at the sa-me ti-
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 386--389
+\T1/ptm/m/n/10 me the de-ri-va-ti-ve will con-ti-nue to de-cre-
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 386--389
+\T1/ptm/m/n/10 ase. This will con-ti-nue on fo-re-ver, $\OML/ztmcm/m/it/10 P$ \
+T1/ptm/m/n/10 ne-
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 386--389
+\T1/ptm/m/n/10 ver re-aching the car-ry-ing ca-pa-ci-ty $\OML/ztmcm/m/it/10 k$\
+T1/ptm/m/n/10 . The
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 386--389
+\T1/ptm/m/n/10 two ro-ots of $\OML/ztmcm/m/it/10 f\OT1/ztmcm/m/n/10 (\OML/ztmcm
+/m/it/10 P\OT1/ztmcm/m/n/10 )\OML/ztmcm/m/it/10 ; P \OT1/ztmcm/m/n/10 = 0$\T1/p
+tm/m/n/10 , and $\OML/ztmcm/m/it/10 P \OT1/ztmcm/m/n/10 = \OML/ztmcm/m/it/10 k$
+\T1/ptm/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 386--389
+\T1/ptm/m/n/10 are cle-ar-ly con-stant so-lu-tions of the lo-gi-
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 386--389
+\T1/ptm/m/n/10 stic DE. They are cal-led \T1/ptm/b/n/10 equ-ili-brium so-
+ []
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 386--389
+\T1/ptm/m/n/10 tion is dif-fe-rent from the se-cond in that
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 386--389
+\T1/ptm/m/n/10 if an in-i-tial va-lue we-re to be pre-scri-
+ []
+
+
+Underfull \hbox (badness 5260) in paragraph at lines 386--389
+\T1/ptm/m/n/10 bed clo-se to $\OML/ztmcm/m/it/10 P \OT1/ztmcm/m/n/10 = 0$\T1/pt
+m/m/n/10 , the so-lu-tion wo-
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 386--389
+\T1/ptm/m/n/10 uld con-ti-nue to grow and even-tu-al-ly ap-
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 386--389
+\T1/ptm/m/n/10 pro-ach $\OML/ztmcm/m/it/10 P \OT1/ztmcm/m/n/10 = \OML/ztmcm/m/i
+t/10 k$ \T1/ptm/m/n/10 as $\OML/ztmcm/m/it/10 t \OMS/ztmcm/m/n/10 ! 1$\T1/ptm/m
+/n/10 . Thus so-lu-tions
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 386--389
+\T1/ptm/m/n/10 ly di-ver-ge away from it and such equ-ili-
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 386--389
+\T1/ptm/m/n/10 brium so-lu-tions are cal-led \T1/ptm/b/n/10 unsta-ble\T1/ptm/m/
+n/10 . If a
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 386--389
+\T1/ptm/m/n/10 so-lu-tion star-ted with in-i-tial con-di-tion clo-
+ []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 386--389
+\T1/ptm/m/n/10 se to $\OML/ztmcm/m/it/10 P \OT1/ztmcm/m/n/10 = \OML/ztmcm/m/it/
+10 k$ \T1/ptm/m/n/10 (either gre-ater than or less
+ []
+
+
+Underfull \hbox (badness 5245) in paragraph at lines 386--389
+\T1/ptm/m/n/10 than), then as $\OML/ztmcm/m/it/10 t \OMS/ztmcm/m/n/10 ! 1$\T1/p
+tm/m/n/10 , any such so-lu-
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 386--389
+\OML/ztmcm/m/it/10 k$\T1/ptm/m/n/10 . Such so-lu-tions are cal-led sta-ble. Aga
+-
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 386--389
+\T1/ptm/m/n/10 in this is cle-ar from the graph of $\OML/ztmcm/m/it/10 P[] \OT1
+/ztmcm/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 386--389
+\OML/ztmcm/m/it/10 f\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 P\OT1/ztmcm/m/n/10 )$
+ \T1/ptm/m/n/10 in Fi-gu-re $\OT1/ztmcm/m/n/10 8\OML/ztmcm/m/it/10 :\OT1/ztmcm/
+m/n/10 9$\T1/ptm/m/n/10 , along with the flow
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 386--389
+\T1/ptm/m/n/10 di-rec-tions shown the-re: If $\OML/ztmcm/m/it/10 P[] \OT1/ztmcm
+/m/n/10 = \OML/ztmcm/m/it/10 f\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 P\OT1/ztmcm
+/m/n/10 ) \OML/ztmcm/m/it/10 >
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 386--389
+\OT1/ztmcm/m/n/10 0$\T1/ptm/m/n/10 , flow is to the ri-ght (in-cre-asing $\OML/
+ztmcm/m/it/10 P$ \T1/ptm/m/n/10 );
+ []
+
+
+Underfull \hbox (badness 3907) in paragraph at lines 386--389
+\T1/ptm/m/n/10 if $\OML/ztmcm/m/it/10 P[] \OT1/ztmcm/m/n/10 = \OML/ztmcm/m/it/1
+0 f\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 P\OT1/ztmcm/m/n/10 ) \OML/ztmcm/m/it/1
+0 < \OT1/ztmcm/m/n/10 0$\T1/ptm/m/n/10 , flow is to the left;
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 386--389
+\T1/ptm/m/n/10 if $\OML/ztmcm/m/it/10 P[] \OT1/ztmcm/m/n/10 = \OML/ztmcm/m/it/1
+0 f\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 P\OT1/ztmcm/m/n/10 ) = 0$\T1/ptm/m/n/1
+0 , we are at an equ-ili-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--389
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--399
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--414
+
+ []
+
+
+Overfull \hbox (1.30313pt too wide) in paragraph at lines 404--414
+[]
+ []
+
+[24 <.././dup//img_20.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 490--495
+
+ []
+
+[25]
+Overfull \hbox (9.68443pt too wide) in paragraph at lines 519--519
+|[]\T1/ptm/b/sc/16 MORE AC-CU-RA-TE ME-THODS FOR IN-I-TIAL VA-LUE PRO-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--527
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--532
+
+ []
+
+[26]
+<.././dup//img_21.png, id=104, 505.28775pt x 356.532pt>
+File: .././dup//img_21.png Graphic file (type png)
+<use .././dup//img_21.png>
+Package pdftex.def Info: .././dup//img_21.png  used on input line 551.
+(pdftex.def)             Requested size: 338.58632pt x 238.90782pt.
+ [27 <.././dup//img_21.png>]
+<.././dup//img_22.png, id=108, 313.17pt x 382.42876pt>
+File: .././dup//img_22.png Graphic file (type png)
+<use .././dup//img_22.png>
+Package pdftex.def Info: .././dup//img_22.png  used on input line 593.
+(pdftex.def)             Requested size: 96.73788pt x 118.13153pt.
+<.././dup//img_23.png, id=109, 288.47775pt x 383.031pt>
+File: .././dup//img_23.png Graphic file (type png)
+<use .././dup//img_23.png>
+Package pdftex.def Info: .././dup//img_23.png  used on input line 602.
+(pdftex.def)             Requested size: 96.73788pt x 128.44037pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--618
+
+ []
+
+<.././dup//img_24.png, id=110, 646.8165pt x 433.01775pt>
+File: .././dup//img_24.png Graphic file (type png)
+<use .././dup//img_24.png>
+Package pdftex.def Info: .././dup//img_24.png  used on input line 655.
+(pdftex.def)             Requested size: 338.58632pt x 226.67038pt.
+
+Underfull \vbox (badness 2970) has occurred while \output is active []
+
+ [28 <.././dup//img_22.png> <.././dup//img_23.png>]
+<.././dup//img_25.png, id=114, 312.56775pt x 240.9pt>
+File: .././dup//img_25.png Graphic file (type png)
+<use .././dup//img_25.png>
+Package pdftex.def Info: .././dup//img_25.png  used on input line 661.
+(pdftex.def)             Requested size: 338.58632pt x 260.95474pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--670
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--670
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 671--675
+
+ []
+
+[29 <.././dup//img_24.png> <.././dup//img_25.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 699--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--715
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 728--733
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 728--733
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 734--743
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--743
+
+ []
+
+<.././dup//img_26.png, id=121, 395.67825pt x 273.4215pt>
+File: .././dup//img_26.png Graphic file (type png)
+<use .././dup//img_26.png>
+Package pdftex.def Info: .././dup//img_26.png  used on input line 764.
+(pdftex.def)             Requested size: 338.58632pt x 233.98222pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+Overfull \hbox (36.86906pt too wide) in paragraph at lines 777--780
+[][]
+ []
+
+[32 <.././dup//img_26.png>] [33] (ch8(1).aux) ) 
+Here is how much of TeX's memory you used:
+ 10135 strings out of 478582
+ 169701 string characters out of 2843872
+ 694455 words of memory out of 3000000
+ 28118 multiletter control sequences out of 15000+600000
+ 538460 words of font info for 124 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 90i,17n,93p,2585b,1727s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/Kacper/AppData/Local/P
+rograms/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Kacper/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Kacper/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Kacper
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Use
+rs/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8
+a.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usy
+r.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usy
+r.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb
+8a.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
+r8a.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
+mr8a.pfb><C:/Users/Kacper/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on ch8(1).pdf (33 pages, 1060516 bytes).
+PDF statistics:
+ 179 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+
